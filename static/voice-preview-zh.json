@@ -1,0 +1,2162 @@
+{
+    "data": {
+        "voice_list": [
+            {
+                "voice_id": "226905123659904",
+                "parent_voice_id": "0",
+                "voice_name": "可靠男声 - 低沉、浑厚、温暖",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "在线教育",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171098868054785-207331589840987.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949558702,
+                "update_time": 1754550615810,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/89956d48-f0d7-49c7-98a0-4dfb1aee0dbe.mp3",
+                "uniq_id": "Chinese (Mandarin)_Reliable_Executive",
+                "group_id": "0",
+                "description": "深沉温暖，发声饱满有力，吐字稳定自信，整体气质沉着且权威。适合内部沟通、培训视频和企业旁白等需要传达信任、领导力与安定感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "低沉"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659905",
+                "parent_voice_id": "0",
+                "voice_name": "新闻主播 - 干练、干脆、浑厚",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "中年",
+                    "广告与预告片",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170931210906334-207331589840973.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949560302,
+                "update_time": 1754550661914,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/f08808e9-01b0-45d0-baa5-d79ede6f5c8e.mp3",
+                "uniq_id": "Chinese (Mandarin)_News_Anchor",
+                "group_id": "0",
+                "description": "音色圆润明亮，发声饱满有力，节奏稳定清晰，呈现经典新闻主播式表达。适合电视新闻片段、公益公告和企业报告等需要权威、客观与可信度的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "干练"
+                    },
+                    {
+                        "category": 6,
+                        "name": "干脆"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 4,
+                        "name": "中年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    },
+                    {
+                        "category": 9,
+                        "name": "推荐"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659906",
+                "parent_voice_id": "0",
+                "voice_name": "不羁青年 - 有磁性、低沉、冷峻",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "游戏与 RPG",
+                    "有声剧",
+                    "动漫与动画",
+                    "角色配音"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171547634375627-207334257025089.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949561909,
+                "update_time": 1754550707351,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/05498993-76c0-443b-aac4-800abf56e5ef.mp3",
+                "uniq_id": "Chinese (Mandarin)_Unrestrained_Young_Man",
+                "group_id": "0",
+                "description": "低沉冷感且富有磁性，节奏慵懒又带掌控力，听感精致而有压迫感。适合恋爱有声剧、角色对白和互动恋爱故事等需要冷静自信、傲气与强势气场的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有磁性"
+                    },
+                    {
+                        "category": 6,
+                        "name": "低沉"
+                    },
+                    {
+                        "category": 6,
+                        "name": "冷峻"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    }
+                ]
+            },
+            {
+                "voice_id": "228691456335936",
+                "parent_voice_id": "0",
+                "voice_name": "成熟女性 - 丝绒感、妩媚、低沉",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "游戏与 RPG",
+                    "有声剧",
+                    "有声书与小说",
+                    "动漫与动画",
+                    "角色配音"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170948643791003-207331589840975.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1737385675077,
+                "update_time": 1754550732755,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/63e8ebff-5a36-488d-b6e2-87f6a1094f2a.mp3",
+                "uniq_id": "Chinese (Mandarin)_Mature_Woman",
+                "group_id": "0",
+                "description": "带丝绒质感的低沉烟嗓，略带妩媚，以慵懒流畅的节奏呈现，自信且极具吸引力。适合有声剧、角色向恋爱故事和风格化对白等需要神秘感、魅力与克制撩拨感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "丝绒感"
+                    },
+                    {
+                        "category": 6,
+                        "name": "妩媚"
+                    },
+                    {
+                        "category": 6,
+                        "name": "低沉"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    }
+                ]
+            },
+            {
+                "voice_id": "227503656312897",
+                "parent_voice_id": "0",
+                "voice_name": "傲娇小姐 - 明亮、跳脱、俏皮",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "游戏与 RPG",
+                    "动漫与动画",
+                    "角色配音"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171458622199983-207331589841020.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1737095686429,
+                "update_time": 1754550761602,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/d2cb4eaf-73b0-43e1-8b65-af39e515aef5.mp3",
+                "uniq_id": "Arrogant_Miss",
+                "group_id": "0",
+                "description": "高音区明亮有活力，节奏轻快跳跃，带着俏皮自信。适合日漫风配音、角色登场和陪伴感台词等需要生动、机灵与一点顽皮感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "跳脱"
+                    },
+                    {
+                        "category": 6,
+                        "name": "俏皮"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659909",
+                "parent_voice_id": "0",
+                "voice_name": "热心阿姨 - 温暖、朴实、有质感",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "中年",
+                    "有声剧",
+                    "广告与预告片",
+                    "在线教育",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171071679118750-207331589840982.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949566703,
+                "update_time": 1754550801420,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/5d6b6bf7-1f2e-464d-ad18-aa04221b1cf1.mp3",
+                "uniq_id": "Chinese (Mandarin)_Kind-hearted_Antie",
+                "group_id": "0",
+                "description": "温暖朴实，声音有质感，表达像聊天一样亲切关怀，给人邻家和易接近的感觉。适合有声剧、生活方式广告和教育类短内容等需要亲和温度与务实共情的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "朴实"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有质感"
+                    },
+                    {
+                        "category": 4,
+                        "name": "中年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "227503656312898",
+                "parent_voice_id": "0",
+                "voice_name": "机甲装甲 - 清晰、得体、浑厚",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "游戏与 RPG"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171352409438116-207331589841008.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1737095688070,
+                "update_time": 1754550832312,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/8ffa58df-128b-452b-8867-fa97d8bd0445.mp3",
+                "uniq_id": "Robot_Armor",
+                "group_id": "0",
+                "description": "这款声音带有轻微气声、高音和甜美特质，节奏轻巧夸张，贴合校园女王蜂式的人设原型。它以活泼又略带讽刺的风格传达虚荣与傲慢，营造出高人一等的气场。适合角色动画、青春喜剧、恋爱模拟和恶搞短剧，也很适合塑造人气女生、竞争对手或傲慢网红这类角色。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "清晰"
+                    },
+                    {
+                        "category": 6,
+                        "name": "得体"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659910",
+                "parent_voice_id": "0",
+                "voice_name": "清爽青年 - 清晰、沉稳、有磁性",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "游戏与 RPG",
+                    "有声剧",
+                    "角色配音",
+                    "纪录片"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170920833747678-207331589840970.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949568109,
+                "update_time": 1754550873515,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/3ed22c33-5b38-4543-a0cf-7516916ddeaf.mp3",
+                "uniq_id": "hunyin_6",
+                "group_id": "0",
+                "description": "音色微沙、偏低沉，声场饱满，语速快且节奏感强，带着机智又俏皮的不耐烦。适合播客趣闻、广播广告和社交内容等需要魅力、嘴贫感和现代感叙述者气质的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "清晰"
+                    },
+                    {
+                        "category": 6,
+                        "name": "沉稳"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有磁性"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    },
+                    {
+                        "category": 8,
+                        "name": "纪录片"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659911",
+                "parent_voice_id": "0",
+                "voice_name": "港风空姐 - 明亮、轻快、浑厚",
+                "tag_list": [
+                    "中文（普通话）",
+                    "南方口音",
+                    "女声",
+                    "青年",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171072685650758-207331589840983.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949569716,
+                "update_time": 1754550530845,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/b25cf027-7a9b-476a-b244-603523cadfdc.mp3",
+                "uniq_id": "Chinese (Mandarin)_HK_Flight_Attendant",
+                "group_id": "0",
+                "description": "明亮灵动且富有共鸣，节奏快速而富有表现力，整体听感鲜活又口语化。适合脱口秀片段、播客趣闻和幕后故事分享等需要活力、开放感与“真人感”的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "南方口音"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "轻快"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 9,
+                        "name": "推荐"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659912",
+                "parent_voice_id": "0",
+                "voice_name": "幽默长者 - 沙哑、温暖、有质感",
+                "tag_list": [
+                    "中文（普通话）",
+                    "北方口音",
+                    "男声",
+                    "老年",
+                    "有声剧",
+                    "动漫与动画",
+                    "纪录片",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171348097728091-207331589841007.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949571511,
+                "update_time": 1754550926061,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/64e87584-336f-4cf5-9c43-15ef20461f84.mp3",
+                "uniq_id": "Chinese (Mandarin)_Humorous_Elder",
+                "group_id": "0",
+                "description": "略带沙哑，温暖而有质感，口语化表达轻松自然，听起来熟悉又亲切。适合动画作品、文化纪录片和有声剧，尤其适合带有幽默、怀旧和生活气息的日常场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "北方口音"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "沙哑"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有质感"
+                    },
+                    {
+                        "category": 4,
+                        "name": "老年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "纪录片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659913",
+                "parent_voice_id": "0",
+                "voice_name": "绅士男声 - 温暖、顺滑、轻盈",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "有声剧",
+                    "广告与预告片",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171337682957645-207331589841004.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949572915,
+                "update_time": 1754550975278,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/774c0855-9d02-4074-b9da-d859754c9040.mp3",
+                "uniq_id": "Chinese (Mandarin)_Gentleman",
+                "group_id": "0",
+                "description": "低沉温暖且富有质感，表达节奏从容自然，听起来真诚而有思考感。很适合文化纪录片、哲学播客和教育类有声书等需要可信度、思辨气质与安静权威感的内容。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "顺滑"
+                    },
+                    {
+                        "category": 6,
+                        "name": "轻盈"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659914",
+                "parent_voice_id": "0",
+                "voice_name": "暖心闺蜜 - 柔和、轻盈、温暖",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "广告与预告片",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171071679118750-207331589840982.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949574524,
+                "update_time": 1754551043037,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/f8611a77-3e6a-4f70-a45c-5a80f11d293f.mp3",
+                "uniq_id": "Chinese (Mandarin)_Warm_Bestie",
+                "group_id": "0",
+                "description": "深沉温暖，发声饱满有力，吐字稳定自信，整体气质沉着且权威。适合内部沟通、培训视频和企业旁白等需要传达信任、领导力与安定感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "柔和"
+                    },
+                    {
+                        "category": 6,
+                        "name": "轻盈"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659915",
+                "parent_voice_id": "0",
+                "voice_name": "倔强朋友 - 温暖、有质感、浑厚",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "游戏与 RPG",
+                    "有声书与小说",
+                    "动漫与动画",
+                    "角色配音"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170987980918894-207331589840977.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949576148,
+                "update_time": 1754551063536,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/eff646cf-2dfa-4a82-8352-cfea8df051ff.mp3",
+                "uniq_id": "Chinese (Mandarin)_Stubborn_Friend",
+                "group_id": "0",
+                "description": "温暖、有质感且富有共鸣，节奏放松，贴合积极的日常表达风格。适合视觉小说、日常系动画和角色对白等需要乐观、真诚与好友陪伴感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有质感"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659916",
+                "parent_voice_id": "0",
+                "voice_name": "甜美女声 - 甜美、明亮、轻盈",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171072685650758-207331589840983.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949577760,
+                "update_time": 1754551105570,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/79801ab1-a660-4757-bcdd-a59f82feb532.mp3",
+                "uniq_id": "Chinese (Mandarin)_Sweet_Lady",
+                "group_id": "0",
+                "description": "甜美明亮又轻快，表达自然柔和，像现实里轻松聊天一样亲近。适合社交应用、旅行 vlog 和轻松旁白等需要温暖、愉快与自然亲和力的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "甜美"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "轻盈"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303580954357847",
+                "parent_voice_id": "0",
+                "voice_name": "沉思瑞恩 - 清晰、流畅、有感染力",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "中年",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171341151224733-207331589841005.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755669398963,
+                "update_time": 1755669431736,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/a27ae4dd-4057-40cf-93f5-bac39ac0331b.mp3",
+                "uniq_id": "moss_audio_9c223de9-7ce1-11f0-9b9f-463feaa3106a",
+                "group_id": "0",
+                "description": "这款声音以清晰、明亮、专业的质感和流畅、富有探究感的节奏见长，贴合科技记者的人设原型。它通过富有感染力的表达传递好奇与热情，营造出敏锐而有洞察力的氛围。适用于数字媒体内容，如播客访谈、设备讨论和行业分析；也很适合主持人、采访者或评论员这类表达清晰的角色。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "清晰"
+                    },
+                    {
+                        "category": 6,
+                        "name": "流畅"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有感染力"
+                    },
+                    {
+                        "category": 4,
+                        "name": "中年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659917",
+                "parent_voice_id": "0",
+                "voice_name": "南方青年 - 温柔、顺滑、温暖",
+                "tag_list": [
+                    "中文（普通话）",
+                    "南方口音",
+                    "男声",
+                    "青年",
+                    "动漫与动画",
+                    "纪录片",
+                    "广告与预告片",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170934771435569-207331589840974.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949579183,
+                "update_time": 1754551139353,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/8ccda6d6-227f-4f6a-b988-cdc5e54e4169.mp3",
+                "uniq_id": "Chinese (Mandarin)_Southern_Young_Man",
+                "group_id": "0",
+                "description": "温柔温暖，语流顺畅，以轻松口语化的节奏呈现，整体真实自然。适合美食广告、文化短剧和日常系旁白等需要熟悉感与居家气息的内容。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "南方口音"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温柔"
+                    },
+                    {
+                        "category": 6,
+                        "name": "顺滑"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "纪录片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303581129265262",
+                "parent_voice_id": "0",
+                "voice_name": "可信亚历克斯 - 低沉、从容、引导型",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "在线教育",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171343843598564-207331589841006.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755669549142,
+                "update_time": 1755669558634,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/dce34b99-6d79-4284-b137-a1cd778b1ed5.mp3",
+                "uniq_id": "moss_audio_ce44fc67-7ce3-11f0-8de5-96e35d26fb85",
+                "group_id": "0",
+                "description": "以务实专业的人设为核心，这款声音具备低沉、浑厚、略带沙哑的特质，表达节奏克制而稳重。它通过引导式语气传递严肃感与专业度，形成权威可信的听感。适合职业教程、行业洞察和职场建议等教育类内容，也适合导师、专家或讲师角色。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "低沉"
+                    },
+                    {
+                        "category": 6,
+                        "name": "从容"
+                    },
+                    {
+                        "category": 6,
+                        "name": "引导型"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659918",
+                "parent_voice_id": "0",
+                "voice_name": "睿智女士 - 温暖、柔和、温柔",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "中年",
+                    "有声剧",
+                    "有声书与小说",
+                    "广告与预告片",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171105022038562-207331589840989.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949580794,
+                "update_time": 1754551178024,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/cf19e764-8f0d-461b-b8e0-258fd036c131.mp3",
+                "uniq_id": "Chinese (Mandarin)_Wise_Women",
+                "group_id": "0",
+                "description": "温暖醇厚又温柔，表达方式轻松自然，给人睿智、关怀和值得信赖的感觉。适合家庭向生活广告、叙事类有声书和老年关怀类信息传达等需要共情、温度与稳重引导感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "柔和"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温柔"
+                    },
+                    {
+                        "category": 4,
+                        "name": "中年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303582427742282",
+                "parent_voice_id": "0",
+                "voice_name": "警觉薇洛 - 明亮、流畅、建议型",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170897805491285-207331589840966.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755669723368,
+                "update_time": 1755669728708,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/28897f3c-ba7d-4d22-a184-e0a3cf7db66b.mp3",
+                "uniq_id": "moss_audio_3dee3d0c-7ce6-11f0-8ff8-2a857e2646d2",
+                "group_id": "0",
+                "description": "这款声音拥有明亮、利落、年轻的质感，以及流畅、口语化的节奏，贴合“有想法的内容博主”这一原型。它以建议式表达传递坦率和务实的情绪，营造出贴近生活的氛围。适合社交媒体内容，如个人 vlog、生活建议和轻松评论，也适合博主、现代旁白或同龄顾问类角色。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "流畅"
+                    },
+                    {
+                        "category": 6,
+                        "name": "建议型"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659919",
+                "parent_voice_id": "0",
+                "voice_name": "温柔少年 - 顺滑、轻盈、温暖",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "游戏与 RPG",
+                    "在线教育",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171254763978891-207331589840999.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949582208,
+                "update_time": 1754551201823,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/314e35ec-b736-4f54-90c2-e60a6d007857.mp3",
+                "uniq_id": "Chinese (Mandarin)_Gentle_Youth",
+                "group_id": "0",
+                "description": "顺滑轻柔又温暖，口语化表达自然流动，给人亲近、善意和支持感。适合互动恋爱内容、冥想应用和语言学习模块等需要温和陪伴与安抚感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "顺滑"
+                    },
+                    {
+                        "category": 6,
+                        "name": "轻盈"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303582427742323",
+                "parent_voice_id": "0",
+                "voice_name": "务实格蕾丝 - 明亮、语速快、直率",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171105022038562-207331589840989.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755670060959,
+                "update_time": 1755670070031,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/08a28aff-d3c2-42d6-97c3-e442ee066222.mp3",
+                "uniq_id": "moss_audio_aaa1346a-7ce7-11f0-8e61-2e6e3c7ee85d",
+                "group_id": "0",
+                "description": "这款声音呈现出鲜明的“坦率现实派”特征，结合明亮、锐利、富有表现力的音色与快速、强调感强的表达方式。它以直率语气传递挫败感与真实态度，营造出强烈而真实的氛围。适合个人 vlog、职场吐槽和生活评论等社交媒体场景，也适合内容创作者、贴地好友或现代旁白类角色。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "语速快"
+                    },
+                    {
+                        "category": 6,
+                        "name": "直率"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659920",
+                "parent_voice_id": "0",
+                "voice_name": "暖心女孩 - 甜美、轻盈、顺滑",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "游戏与 RPG",
+                    "有声剧",
+                    "有声书与小说",
+                    "动漫与动画"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171217986331571-207331589840997.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949583808,
+                "update_time": 1754551241410,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/8800a58f-e765-4eab-aba8-042b0f9072f3.mp3",
+                "uniq_id": "Chinese (Mandarin)_Warm_Girl",
+                "group_id": "0",
+                "description": "甜美轻柔，音色丝滑，表达自然温和，整体听感亲近而私密。适合恋爱有声剧、日常系动画和互动视觉故事等需要共情、柔软感与一点脆弱气质的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "甜美"
+                    },
+                    {
+                        "category": 6,
+                        "name": "轻盈"
+                    },
+                    {
+                        "category": 6,
+                        "name": "顺滑"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659921",
+                "parent_voice_id": "0",
+                "voice_name": "男声播报员 - 浑厚、干练、温暖",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "在线教育",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171556053389397-207334257025090.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949585212,
+                "update_time": 1754551268372,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/404e2907-45c7-4468-b9bb-1d8ea1504cc8.mp3",
+                "uniq_id": "Chinese (Mandarin)_Male_Announcer",
+                "group_id": "0",
+                "description": "顺滑轻柔又温暖，口语化表达自然流动，给人亲近、善意和支持感。适合互动恋爱内容、冥想应用和语言学习模块等需要温和陪伴与安抚感的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 6,
+                        "name": "干练"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659922",
+                "parent_voice_id": "0",
+                "voice_name": "亲切长者 - 沧桑、温暖、温柔",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "老年",
+                    "有声剧",
+                    "动漫与动画",
+                    "角色配音",
+                    "广告与预告片"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170897805491285-207331589840966.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949586622,
+                "update_time": 1754551294787,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/60b54ed4-aebe-44fb-a963-1a0d8350a7b9.mp3",
+                "uniq_id": "Chinese (Mandarin)_Kind-hearted_Elder",
+                "group_id": "0",
+                "description": "略带岁月感却依然温柔温暖，节奏从容，语气自然亲切，给人安慰与熟悉感。适合家庭向广告（如保险）、广播剧和动画配音等需要怀旧感与真挚关怀的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "沧桑"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温柔"
+                    },
+                    {
+                        "category": 4,
+                        "name": "老年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    },
+                    {
+                        "category": 8,
+                        "name": "广告与预告片"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659923",
+                "parent_voice_id": "0",
+                "voice_name": "可爱精灵 - 高音、明亮、甜美",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "儿童",
+                    "游戏与 RPG",
+                    "有声书与小说",
+                    "动漫与动画",
+                    "角色配音"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170928701079772-207331589840972.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949588042,
+                "update_time": 1754551370275,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/6c96de4b-9c08-4b17-a183-3d1512449ae4.mp3",
+                "uniq_id": "Chinese (Mandarin)_Cute_Spirit",
+                "group_id": "0",
+                "description": "明亮、甜美、音高偏高，节奏鲜活有活力，充满纯粹快乐与俏皮天真。适合日漫风配音、陪伴型对白和儿童有声书等需要温暖可爱火花感的内容。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "高音"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "甜美"
+                    },
+                    {
+                        "category": 4,
+                        "name": "儿童"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "角色配音"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659924",
+                "parent_voice_id": "0",
+                "voice_name": "电台主持 - 干脆、有活力、明亮",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "有声剧",
+                    "动漫与动画",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171352409438116-207331589841008.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949590074,
+                "update_time": 1754551398856,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/2161adbc-e06c-4fca-8b5e-0999fc89d015.mp3",
+                "uniq_id": "Chinese (Mandarin)_Radio_Host",
+                "group_id": "0",
+                "description": "清晰、轻快又现代，语速快、表达口语化，并带着一点直白锋芒。适合有声剧、社交媒体短剧和日常叙事等需要挫败感、怀疑感与外放表现力的内容。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "干脆"
+                    },
+                    {
+                        "category": 6,
+                        "name": "有活力"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "动漫与动画"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659925",
+                "parent_voice_id": "0",
+                "voice_name": "抒情旁白 - 低沉、顺滑、浑厚",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "中年",
+                    "有声书与小说",
+                    "纪录片",
+                    "在线教育"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171101706191124-207331589840988.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949591686,
+                "update_time": 1754551427443,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/950e53ff-98f1-4342-8c99-424f72569211.mp3",
+                "uniq_id": "Chinese (Mandarin)_Lyrical_Voice",
+                "group_id": "0",
+                "description": "低沉顺滑且富有共鸣，语调富于抒情和表现力，听感平静又富有思辨气质。适合历史与文化纪录片、文学有声书和冥想引导等需要哲思感与电影化旁白氛围的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "低沉"
+                    },
+                    {
+                        "category": 6,
+                        "name": "顺滑"
+                    },
+                    {
+                        "category": 6,
+                        "name": "浑厚"
+                    },
+                    {
+                        "category": 4,
+                        "name": "中年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "纪录片"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659926",
+                "parent_voice_id": "0",
+                "voice_name": "直率少年 - 明亮、清晰、少年感",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "游戏与 RPG",
+                    "有声剧",
+                    "在线教育",
+                    "播客与社交"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171565701695345-207334257025092.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949593102,
+                "update_time": 1754551456598,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/9e71a46a-f486-4128-be72-1034d31b9ed7.mp3",
+                "uniq_id": "Chinese (Mandarin)_Straightforward_Boy",
+                "group_id": "0",
+                "description": "明亮清晰且带有少年气，措辞直接自然，整体感觉坦诚又自信。适合恋爱模拟风对白、语言学习应用和现代有声剧等需要友好、易接近主角声线的内容。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "明亮"
+                    },
+                    {
+                        "category": 6,
+                        "name": "清晰"
+                    },
+                    {
+                        "category": 6,
+                        "name": "少年感"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "游戏与 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声剧"
+                    },
+                    {
+                        "category": 8,
+                        "name": "在线教育"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659927",
+                "parent_voice_id": "0",
+                "voice_name": "真诚男声 - 温暖、温柔、顺滑",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "男声",
+                    "青年",
+                    "有声书与小说",
+                    "播客与社交",
+                    "企业宣传与旁白"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171217986331571-207331589840997.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949594712,
+                "update_time": 1754551496085,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/5390bf72-3d54-417a-a6eb-e4ae7cf9f977.mp3",
+                "uniq_id": "Chinese (Mandarin)_Sincere_Adult",
+                "group_id": "0",
+                "description": "温暖温柔且顺滑，口语化节奏自然，整体听感真诚而富有共情力。适合 AI 聊天体验、健康类应用和有声书旁白等需要友善支持感与可信温度的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "男声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温柔"
+                    },
+                    {
+                        "category": 6,
+                        "name": "顺滑"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "播客与社交"
+                    },
+                    {
+                        "category": 8,
+                        "name": "企业宣传与旁白"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659928",
+                "parent_voice_id": "0",
+                "voice_name": "温柔长者 - 温暖、柔和、成熟",
+                "tag_list": [
+                    "中文（普通话）",
+                    "标准",
+                    "女声",
+                    "青年",
+                    "有声书与小说",
+                    "纪录片"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170934771435569-207331589840974.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949596322,
+                "update_time": 1754551660994,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/e70ebd5e-5491-401c-9ba9-c93d1a81a136.mp3",
+                "uniq_id": "Chinese (Mandarin)_Gentle_Senior",
+                "group_id": "0",
+                "description": "温暖柔和而成熟，节奏平静安稳，给人深切的关怀感与踏实感。适合儿童有声书、照护与健康公益信息，以及文化纪录片等需要耐心、共情与安抚力的场景。",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "中文（普通话）"
+                    },
+                    {
+                        "category": 2,
+                        "name": "标准"
+                    },
+                    {
+                        "category": 3,
+                        "name": "女声"
+                    },
+                    {
+                        "category": 6,
+                        "name": "温暖"
+                    },
+                    {
+                        "category": 6,
+                        "name": "柔和"
+                    },
+                    {
+                        "category": 6,
+                        "name": "成熟"
+                    },
+                    {
+                        "category": 4,
+                        "name": "青年"
+                    },
+                    {
+                        "category": 8,
+                        "name": "有声书与小说"
+                    },
+                    {
+                        "category": 8,
+                        "name": "纪录片"
+                    }
+                ]
+            }
+        ],
+        "total": 54,
+        "has_more": true,
+        "recommended_voice_list": [],
+        "base_resp": {}
+    },
+    "statusInfo": {
+        "code": 0,
+        "httpCode": 0,
+        "message": "Success",
+        "serviceTime": 1778932236,
+        "requestID": "09f14c6a-0254-41fc-b8ff-0af01fd9717a",
+        "debugInfo": "Success",
+        "serverAlert": 0
+    }
+}

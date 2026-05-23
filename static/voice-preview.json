@@ -1,0 +1,2162 @@
+{
+    "data": {
+        "voice_list": [
+            {
+                "voice_id": "226905123659904",
+                "parent_voice_id": "0",
+                "voice_name": "Reliable Executive - Deep,Resonant,Warm",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "E-Learning",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171098868054785-207331589840987.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949558702,
+                "update_time": 1754550615810,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/89956d48-f0d7-49c7-98a0-4dfb1aee0dbe.mp3",
+                "uniq_id": "Chinese (Mandarin)_Reliable_Executive",
+                "group_id": "0",
+                "description": "Deep, warm, and strongly projected with steady, confident articulation that feels composed and authoritative. Ideal for internal comms, training videos, and corporate narration where trust, leadership, and reassurance matter.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Deep"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659905",
+                "parent_voice_id": "0",
+                "voice_name": "News Anchor - Polished,Crisp,Resonant",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Middle-aged",
+                    "Commercials \u0026 Trailers",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170931210906334-207331589840973.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949560302,
+                "update_time": 1754550661914,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/f08808e9-01b0-45d0-baa5-d79ede6f5c8e.mp3",
+                "uniq_id": "Chinese (Mandarin)_News_Anchor",
+                "group_id": "0",
+                "description": "Rounded, bright, and strongly projected with steady, clear pacing—classic anchor-style delivery. Best for TV news clips, public service announcements, and corporate reports where authority, objectivity, and trust are essential.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Polished"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Crisp"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Middle-aged"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    },
+                    {
+                        "category": 9,
+                        "name": "recommend"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659906",
+                "parent_voice_id": "0",
+                "voice_name": "Unrestrained Young Man - Magnetic,Deep,Cool",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Audio Drama",
+                    "Anime \u0026 Animation",
+                    "Character Dubbing"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171547634375627-207334257025089.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949561909,
+                "update_time": 1754550707351,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/05498993-76c0-443b-aac4-800abf56e5ef.mp3",
+                "uniq_id": "Chinese (Mandarin)_Unrestrained_Young_Man",
+                "group_id": "0",
+                "description": "Low, cool, and magnetic with a lazy, commanding rhythm that feels polished and intimidating. Excellent for romantic audio drama, character dialogue, and interactive romance stories when you want cold confidence, arrogance, and a dominant edge.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Magnetic"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Deep"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Cool"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    }
+                ]
+            },
+            {
+                "voice_id": "228691456335936",
+                "parent_voice_id": "0",
+                "voice_name": "Mature Woman - Velvety,Sultry,Deep",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Audio Drama",
+                    "Audiobooks \u0026 Novels",
+                    "Anime \u0026 Animation",
+                    "Character Dubbing"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170948643791003-207331589840975.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1737385675077,
+                "update_time": 1754550732755,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/63e8ebff-5a36-488d-b6e2-87f6a1094f2a.mp3",
+                "uniq_id": "Chinese (Mandarin)_Mature_Woman",
+                "group_id": "0",
+                "description": "Velvety, low, and smoky with a sultry edge, delivered in a lazy, fluid cadence that feels confident and magnetic. Excellent for audio drama, character-driven romance stories, and stylish dialogue that needs mystery, charm, and controlled allure.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Velvety"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Sultry"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Deep"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    }
+                ]
+            },
+            {
+                "voice_id": "227503656312897",
+                "parent_voice_id": "0",
+                "voice_name": "Arrogant Miss - Bright,Bouncy,Playful",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Anime \u0026 Animation",
+                    "Character Dubbing"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171458622199983-207331589841020.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1737095686429,
+                "update_time": 1754550761602,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/d2cb4eaf-73b0-43e1-8b65-af39e515aef5.mp3",
+                "uniq_id": "Arrogant_Miss",
+                "group_id": "0",
+                "description": "High-pitched, bright, and energetic with a bouncy, upbeat rhythm and playful confidence. Perfect for anime-style dubbing, character introductions, and companion-style lines that should feel lively and mischievous.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bouncy"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Playful"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659909",
+                "parent_voice_id": "0",
+                "voice_name": "Kind-hearted Antie - Warm,Earthy,Textured",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Middle-aged",
+                    "Audio Drama",
+                    "Commercials \u0026 Trailers",
+                    "E-Learning",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171071679118750-207331589840982.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949566703,
+                "update_time": 1754550801420,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/5d6b6bf7-1f2e-464d-ad18-aa04221b1cf1.mp3",
+                "uniq_id": "Chinese (Mandarin)_Kind-hearted_Antie",
+                "group_id": "0",
+                "description": "Warm, down-to-earth, and textured with a chatty, caring flow that feels neighborly and approachable. Works well for audio drama, lifestyle ads, and educational sketches that benefit from friendly warmth and practical empathy.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Earthy"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Textured"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Middle-aged"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "227503656312898",
+                "parent_voice_id": "0",
+                "voice_name": "Robot Armor - Clear,Poised,Resonant",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Games \u0026 RPG"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171352409438116-207331589841008.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1737095688070,
+                "update_time": 1754550832312,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/8ffa58df-128b-452b-8867-fa97d8bd0445.mp3",
+                "uniq_id": "Robot_Armor",
+                "group_id": "0",
+                "description": "This voice has breathy, high-pitched, and sweet qualities, with a light, exaggerated rhythm, fitting the high school queen bee archetype. It conveys vanity and arrogance with a lively yet sarcastic style, creating an air of superiority. Ideal for character animation, including teen comedies, dating sims, and parody sketches. Perfect for roles like popular girls, rivals, or arrogant influencers.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Clear"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Poised"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659910",
+                "parent_voice_id": "0",
+                "voice_name": "Refreshing Young Man - Clear,Composed,Magnetic",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Audio Drama",
+                    "Character Dubbing",
+                    "Documentary"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170920833747678-207331589840970.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949568109,
+                "update_time": 1754550873515,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/3ed22c33-5b38-4543-a0cf-7516916ddeaf.mp3",
+                "uniq_id": "hunyin_6",
+                "group_id": "0",
+                "description": "Husky, low, and big-voiced with fast, rhythmic delivery that carries witty, playful irritation. Great for podcast anecdotes, broadcast ads, and social content when you want charm, sass, and an engaging modern narrator feel.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Clear"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Composed"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Magnetic"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Documentary"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659911",
+                "parent_voice_id": "0",
+                "voice_name": "HK Flight Attendant - Bright,Agile,Resonant",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "CN-Southern",
+                    "Female",
+                    "Young",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171072685650758-207331589840983.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949569716,
+                "update_time": 1754550530845,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/b25cf027-7a9b-476a-b244-603523cadfdc.mp3",
+                "uniq_id": "Chinese (Mandarin)_HK_Flight_Attendant",
+                "group_id": "0",
+                "description": "Bright, agile, and resonant with fast, expressive pacing that feels lively and conversational. Best for talk-show clips, podcast anecdotes, and behind-the-scenes storytelling where you want energy, openness, and a “real person” vibe.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "CN-Southern"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Agile"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 9,
+                        "name": "recommend"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659912",
+                "parent_voice_id": "0",
+                "voice_name": "Humorous Elder - Gravelly,Warm,Textured",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "CN-Northern",
+                    "Male",
+                    "Elderly",
+                    "Audio Drama",
+                    "Anime \u0026 Animation",
+                    "Documentary",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171348097728091-207331589841007.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949571511,
+                "update_time": 1754550926061,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/64e87584-336f-4cf5-9c43-15ef20461f84.mp3",
+                "uniq_id": "Chinese (Mandarin)_Humorous_Elder",
+                "group_id": "0",
+                "description": "Husky, warm, and textured with a casual, spoken style that feels relaxed and familiar. Great for animated features, cultural docs, and audio drama—especially everyday scenes that lean on humor, nostalgia, and lived-in charm.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "CN-Northern"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Gravelly"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Textured"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Elderly"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Documentary"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659913",
+                "parent_voice_id": "0",
+                "voice_name": "Gentleman  - Warm,Smooth,Airy",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Audio Drama",
+                    "Commercials \u0026 Trailers",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171337682957645-207331589841004.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949572915,
+                "update_time": 1754550975278,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/774c0855-9d02-4074-b9da-d859754c9040.mp3",
+                "uniq_id": "Chinese (Mandarin)_Gentleman",
+                "group_id": "0",
+                "description": "Deep, warm, and textured with an unhurried, natural delivery that sounds sincere and reflective. A strong fit for cultural documentaries, philosophy podcasts, and educational audiobooks that need thoughtful credibility and quiet authority.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Smooth"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Airy"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659914",
+                "parent_voice_id": "0",
+                "voice_name": "Warm Bestie - Soft,Airy,Warm",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Commercials \u0026 Trailers",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171071679118750-207331589840982.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949574524,
+                "update_time": 1754551043037,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/f8611a77-3e6a-4f70-a45c-5a80f11d293f.mp3",
+                "uniq_id": "Chinese (Mandarin)_Warm_Bestie",
+                "group_id": "0",
+                "description": "Deep, warm, and strongly projected with steady, confident articulation that feels composed and authoritative. Ideal for internal comms, training videos, and corporate narration where trust, leadership, and reassurance matter.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Soft"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Airy"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659915",
+                "parent_voice_id": "0",
+                "voice_name": "Stubborn Friend - Warm,Textured,Resonant",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Audiobooks \u0026 Novels",
+                    "Anime \u0026 Animation",
+                    "Character Dubbing"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170987980918894-207331589840977.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949576148,
+                "update_time": 1754551063536,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/eff646cf-2dfa-4a82-8352-cfea8df051ff.mp3",
+                "uniq_id": "Chinese (Mandarin)_Stubborn_Friend",
+                "group_id": "0",
+                "description": "Warm, textured, and resonant with a relaxed pace that fits an upbeat, everyday style. Ideal for visual novels, slice-of-life animation, and character dialogue when you want optimism, sincerity, and supportive friend energy.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Textured"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659916",
+                "parent_voice_id": "0",
+                "voice_name": "Sweet Lady - Sweet,Bright,Airy",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171072685650758-207331589840983.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949577760,
+                "update_time": 1754551105570,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/79801ab1-a660-4757-bcdd-a59f82feb532.mp3",
+                "uniq_id": "Chinese (Mandarin)_Sweet_Lady",
+                "group_id": "0",
+                "description": "Sweet, bright, and breezy with a gentle, natural delivery that feels like chatting in real life. Great for social apps, travel vlogs, and casual narration when you want warmth, cheer, and easy charm.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Sweet"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Airy"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303580954357847",
+                "parent_voice_id": "0",
+                "voice_name": "Reflective Ryan - Clear,Fluid,Engaging",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Middle-aged",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171341151224733-207331589841005.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755669398963,
+                "update_time": 1755669431736,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/a27ae4dd-4057-40cf-93f5-bac39ac0331b.mp3",
+                "uniq_id": "moss_audio_9c223de9-7ce1-11f0-9b9f-463feaa3106a",
+                "group_id": "0",
+                "description": "Defined by a clear, bright, and professional quality and fluid and inquisitive pacing, the voice fits a Tech Journalist archetype. It delivers curiosity and enthusiasm through an engaging style, establishing an insightful atmosphere. Suited for Digital Media uses including podcast interviews, equipment discussions, and industry analysis. Ideal for casting Host, Interviewer, or Commentator with an articulate character.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Clear"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Fluid"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Engaging"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Middle-aged"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659917",
+                "parent_voice_id": "0",
+                "voice_name": "Southern Young Man - Gentle,Smooth,Warm",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "CN-Southern",
+                    "Male",
+                    "Young",
+                    "Anime \u0026 Animation",
+                    "Documentary",
+                    "Commercials \u0026 Trailers",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170934771435569-207331589840974.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949579183,
+                "update_time": 1754551139353,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/8ccda6d6-227f-4f6a-b988-cdc5e54e4169.mp3",
+                "uniq_id": "Chinese (Mandarin)_Southern_Young_Man",
+                "group_id": "0",
+                "description": "Gentle, warm, and flowing with an easy, colloquial rhythm that feels relaxed and genuine. Works well for food ads, culture skits, and slice-of-life narration that needs a familiar, homey presence.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "CN-Southern"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Gentle"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Smooth"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Documentary"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303581129265262",
+                "parent_voice_id": "0",
+                "voice_name": "Credible Alex - Deep,Measured,Instructive",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "E-Learning",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171343843598564-207331589841006.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755669549142,
+                "update_time": 1755669558634,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/dce34b99-6d79-4284-b137-a1cd778b1ed5.mp3",
+                "uniq_id": "moss_audio_ce44fc67-7ce3-11f0-8de5-96e35d26fb85",
+                "group_id": "0",
+                "description": "Anchored by a Pragmatic Professional identity, the voice exhibits deep, resonant, and husky qualities and measured and deliberate flow. It expresses seriousness and expertise with instructive inflection to form an authoritative sensation. Designed for Educational work like professional tutorials, industry insights, and career advice. Serves mentor, expert, or instructor roles with a grounded impact.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Deep"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Measured"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Instructive"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659918",
+                "parent_voice_id": "0",
+                "voice_name": "Wise Women - Warm,Mellow,Gentle",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Middle-aged",
+                    "Audio Drama",
+                    "Audiobooks \u0026 Novels",
+                    "Commercials \u0026 Trailers",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171105022038562-207331589840989.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949580794,
+                "update_time": 1754551178024,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/cf19e764-8f0d-461b-b8e0-258fd036c131.mp3",
+                "uniq_id": "Chinese (Mandarin)_Wise_Women",
+                "group_id": "0",
+                "description": "Warm, rich, and gentle with an easy, conversational style that feels wise, caring, and trustworthy. Best for family-focused lifestyle ads, narrative audiobooks, and senior-care messaging that needs empathy, warmth, and grounded guidance.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Mellow"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Gentle"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Middle-aged"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303582427742282",
+                "parent_voice_id": "0",
+                "voice_name": "Wary Willow - Bright,Fluid,Advisory",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170897805491285-207331589840966.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755669723368,
+                "update_time": 1755669728708,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/28897f3c-ba7d-4d22-a184-e0a3cf7db66b.mp3",
+                "uniq_id": "moss_audio_3dee3d0c-7ce6-11f0-8ff8-2a857e2646d2",
+                "group_id": "0",
+                "description": "Defined by a bright, crisp, and youthful quality and fluid and conversational pacing, the voice fits a Thoughtful Influencer archetype. It delivers candid and pragmatic sentiments through an advisory style, establishing a relatable atmosphere. Suited for Social Media Content uses including personal vlogs, life advice segments, and casual commentary. Ideal for casting influencer, modern narrator, or peer advisor roles with an authentic character.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Fluid"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Advisory"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659919",
+                "parent_voice_id": "0",
+                "voice_name": "Gentle Youth - Smooth,Airy,Warm",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "E-Learning",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171254763978891-207331589840999.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949582208,
+                "update_time": 1754551201823,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/314e35ec-b736-4f54-90c2-e60a6d007857.mp3",
+                "uniq_id": "Chinese (Mandarin)_Gentle_Youth",
+                "group_id": "0",
+                "description": "Smooth, light, and warm with an easy conversational flow that feels close, kind, and supportive. Great for interactive romance content, mindfulness apps, and language-learning modules when you want a gentle, reassuring companion tone.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Smooth"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Airy"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "303582427742323",
+                "parent_voice_id": "0",
+                "voice_name": "Grounded Grace - Bright,Rapid,Blunt",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171105022038562-207331589840989.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1755670060959,
+                "update_time": 1755670070031,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/08a28aff-d3c2-42d6-97c3-e442ee066222.mp3",
+                "uniq_id": "moss_audio_aaa1346a-7ce7-11f0-8e61-2e6e3c7ee85d",
+                "group_id": "0",
+                "description": "Presenting a distinct Candid Realist profile, the voice combines bright, sharp, and expressive tones with rapid and emphatic speech patterns. It channels frustration and honesty sentiments within a blunt range, building an authentic mood. Tailored for Social Media scenarios ranging from personal vlogs to workplace rants and lifestyle commentary. A solid choice for a content creator, relatable friend, or modern narrator needing an engaging effect.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Rapid"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Blunt"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659920",
+                "parent_voice_id": "0",
+                "voice_name": "Warm Girl - Sweet,Airy,Smooth",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Audio Drama",
+                    "Audiobooks \u0026 Novels",
+                    "Anime \u0026 Animation"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171217986331571-207331589840997.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949583808,
+                "update_time": 1754551241410,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/8800a58f-e765-4eab-aba8-042b0f9072f3.mp3",
+                "uniq_id": "Chinese (Mandarin)_Warm_Girl",
+                "group_id": "0",
+                "description": "Sweet, light, and silky with a gentle, natural flow that feels close and intimate. Great for romance audio drama, slice-of-life animation, and interactive visual stories when you want empathy, softness, and a touch of vulnerability.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Sweet"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Airy"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Smooth"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659921",
+                "parent_voice_id": "0",
+                "voice_name": "Male Announcer - Resonant,Polished,Warm",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "E-Learning",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171556053389397-207334257025090.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949585212,
+                "update_time": 1754551268372,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/404e2907-45c7-4468-b9bb-1d8ea1504cc8.mp3",
+                "uniq_id": "Chinese (Mandarin)_Male_Announcer",
+                "group_id": "0",
+                "description": "Smooth, light, and warm with an easy conversational flow that feels close, kind, and supportive. Great for interactive romance content, mindfulness apps, and language-learning modules when you want a gentle, reassuring companion tone.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Polished"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659922",
+                "parent_voice_id": "0",
+                "voice_name": "Kind-hearted Elder - Weathered,Warm,Gentle",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Elderly",
+                    "Audio Drama",
+                    "Anime \u0026 Animation",
+                    "Character Dubbing",
+                    "Commercials \u0026 Trailers"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170897805491285-207331589840966.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949586622,
+                "update_time": 1754551294787,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/60b54ed4-aebe-44fb-a963-1a0d8350a7b9.mp3",
+                "uniq_id": "Chinese (Mandarin)_Kind-hearted_Elder",
+                "group_id": "0",
+                "description": "Weathered yet gentle and warm, with an unhurried pace and a naturally friendly tone that feels comforting and familiar. Great for family-focused ads (like insurance), radio drama, and animated voice work that calls for nostalgia and heartfelt care.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Weathered"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Gentle"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Elderly"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Commercials \u0026 Trailers"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659923",
+                "parent_voice_id": "0",
+                "voice_name": "Cute Spirit - High-Pitched,Bright,Sweet",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Child",
+                    "Games \u0026 RPG",
+                    "Audiobooks \u0026 Novels",
+                    "Anime \u0026 Animation",
+                    "Character Dubbing"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170928701079772-207331589840972.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949588042,
+                "update_time": 1754551370275,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/6c96de4b-9c08-4b17-a183-3d1512449ae4.mp3",
+                "uniq_id": "Chinese (Mandarin)_Cute_Spirit",
+                "group_id": "0",
+                "description": "Bright, sweet, and high with lively, energetic pacing—pure joy with playful innocence. Great for anime-style dubbing, companion-style dialogue, and children’s audiobooks that need a warm, cute spark.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "High-Pitched"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Sweet"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Child"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Character Dubbing"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659924",
+                "parent_voice_id": "0",
+                "voice_name": "Radio Host - Crisp,Energetic,Bright",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Audio Drama",
+                    "Anime \u0026 Animation",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171352409438116-207331589841008.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949590074,
+                "update_time": 1754551398856,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/2161adbc-e06c-4fca-8b5e-0999fc89d015.mp3",
+                "uniq_id": "Chinese (Mandarin)_Radio_Host",
+                "group_id": "0",
+                "description": "Clear, upbeat, and modern with fast, conversational delivery and a candid edge. Great for audio drama, social-media sketches, and everyday storytelling that leans into frustration, skepticism, and expressive punch.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Crisp"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Energetic"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Anime \u0026 Animation"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659925",
+                "parent_voice_id": "0",
+                "voice_name": "Lyrical Voice - Deep,Smooth,Resonant",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Middle-aged",
+                    "Audiobooks \u0026 Novels",
+                    "Documentary",
+                    "E-Learning"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171101706191124-207331589840988.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949591686,
+                "update_time": 1754551427443,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/950e53ff-98f1-4342-8c99-424f72569211.mp3",
+                "uniq_id": "Chinese (Mandarin)_Lyrical_Voice",
+                "group_id": "0",
+                "description": "Deep, smooth, and resonant with lyrical, expressive intonation that feels calm and contemplative. Ideal for history and culture documentaries, literary audiobooks, and meditation guides where a philosophical, cinematic narration elevates the mood.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Deep"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Smooth"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Resonant"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Middle-aged"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Documentary"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659926",
+                "parent_voice_id": "0",
+                "voice_name": "Straightforward Boy - Bright,Clear,Youthful",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Games \u0026 RPG",
+                    "Audio Drama",
+                    "E-Learning",
+                    "Podcasts \u0026 Social"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171565701695345-207334257025092.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949593102,
+                "update_time": 1754551456598,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/9e71a46a-f486-4128-be72-1034d31b9ed7.mp3",
+                "uniq_id": "Chinese (Mandarin)_Straightforward_Boy",
+                "group_id": "0",
+                "description": "Bright, clear, and youthful with direct, natural phrasing that feels honest and confident. Great for dating-sim style dialogue, language-learning apps, and modern audio drama where a friendly, approachable lead voice helps.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Bright"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Clear"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Youthful"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Games \u0026 RPG"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audio Drama"
+                    },
+                    {
+                        "category": 8,
+                        "name": "E-Learning"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659927",
+                "parent_voice_id": "0",
+                "voice_name": "Sincere Adult - Warm,Gentle,Smooth",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Male",
+                    "Young",
+                    "Audiobooks \u0026 Novels",
+                    "Podcasts \u0026 Social",
+                    "Corporate \u0026 Narration"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732171217986331571-207331589840997.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949594712,
+                "update_time": 1754551496085,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/5390bf72-3d54-417a-a6eb-e4ae7cf9f977.mp3",
+                "uniq_id": "Chinese (Mandarin)_Sincere_Adult",
+                "group_id": "0",
+                "description": "Warm, gentle, and smooth with an easy conversational rhythm that reads sincere and empathetic. A great match for AI chat experiences, health apps, and audiobook narration when you want friendly support and credible warmth.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Male"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Gentle"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Smooth"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Podcasts \u0026 Social"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Corporate \u0026 Narration"
+                    }
+                ]
+            },
+            {
+                "voice_id": "226905123659928",
+                "parent_voice_id": "0",
+                "voice_name": "Gentle Senior - Warm,Soft,Mature",
+                "tag_list": [
+                    "Chinese (Mandarin)",
+                    "Standard",
+                    "Female",
+                    "Young",
+                    "Audiobooks \u0026 Novels",
+                    "Documentary"
+                ],
+                "file_id": "",
+                "cover_url": "https://cdn.hailuoai.video/moss/staging/2024-11-21-14/moss-audio/voice_cover//1732170934771435569-207331589840974.png?x-oss-process=image/resize,p_50/format,webp",
+                "create_time": 1736949596322,
+                "update_time": 1754551660994,
+                "collected": false,
+                "voice_status": 2,
+                "sample_audio": "https://filecdn.minimax.chat/public/e70ebd5e-5491-401c-9ba9-c93d1a81a136.mp3",
+                "uniq_id": "Chinese (Mandarin)_Gentle_Senior",
+                "group_id": "0",
+                "description": "Warm, soft, and mature with a calm, reassuring pace that feels deeply caring and grounded. Ideal for children’s audiobooks, caregiving and wellness PSAs, and cultural documentaries where patience, empathy, and comfort are key.",
+                "generate_channel": 3,
+                "idx_for_display": [
+                    0,
+                    1
+                ],
+                "tag_items": [
+                    {
+                        "category": 1,
+                        "name": "Chinese (Mandarin)"
+                    },
+                    {
+                        "category": 2,
+                        "name": "Standard"
+                    },
+                    {
+                        "category": 3,
+                        "name": "Female"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Warm"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Soft"
+                    },
+                    {
+                        "category": 6,
+                        "name": "Mature"
+                    },
+                    {
+                        "category": 4,
+                        "name": "Young"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Audiobooks \u0026 Novels"
+                    },
+                    {
+                        "category": 8,
+                        "name": "Documentary"
+                    }
+                ]
+            }
+        ],
+        "total": 54,
+        "has_more": true,
+        "recommended_voice_list": [],
+        "base_resp": {}
+    },
+    "statusInfo": {
+        "code": 0,
+        "httpCode": 0,
+        "message": "Success",
+        "serviceTime": 1778932236,
+        "requestID": "09f14c6a-0254-41fc-b8ff-0af01fd9717a",
+        "debugInfo": "Success",
+        "serverAlert": 0
+    }
+}

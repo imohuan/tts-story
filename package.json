@@ -1,0 +1,22 @@
+{
+  "name": "doubao-tts",
+  "module": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/main.ts",
+    "start": "bun run src/main.ts",
+    "check": "tsc --noEmit",
+    "export:rolemaps": "bun run src/tools/export-rolemaps.ts",
+    "build:voice-preview-zh": "bun run scripts/build-voice-preview-zh.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/ws": "^8.18.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ws": "^8.20.1"
+  }
+}

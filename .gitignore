@@ -1,0 +1,44 @@
+# dependencies (bun install)
+node_modules
+
+# output
+out
+dist
+*.tgz
+
+# code coverage
+coverage
+*.lcov
+output
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# IntelliJ based IDEs
+.idea
+
+# Finder (MacOS) folder config
+.DS_Store
+backup/1-简化.json
+input/对话.json
+input/故事H.json
+input/dialog-3p-minimax-10.json
+input/dialog-3p-minimax.json
+input/dialog-4p-minimax.json
+input/example-v2.json
+input/example-v3.json
+input/example.json

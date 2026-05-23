@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTS JSON Folder Viewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8'
+              }
+            },
+            boxShadow: {
+              card: '0 6px 18px rgba(15, 23, 42, 0.06)'
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <div id="app" class="min-h-screen">
+      <header class="border-b border-slate-200 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+          <div>
+            <h1 class="text-lg font-semibold tracking-tight">TTS JSON 可视化面板</h1>
+            <p class="text-xs text-slate-500">Vue + Tailwind · 现代 SaaS 亮色紧凑布局</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              @click="pickFolder"
+              class="rounded-md bg-brand-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-700"
+            >
+              选择文件夹
+            </button>
+            <button
+              @click="reloadFiles"
+              :disabled="!directoryHandle"
+              class="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              刷新
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="mx-auto grid max-w-7xl grid-cols-12 gap-3 px-4 py-4">
+        <aside class="col-span-12 lg:col-span-4 xl:col-span-3">
+          <section class="rounded-xl border border-slate-200 bg-white p-3 shadow-card">
+            <div class="mb-2 flex items-center justify-between">
+              <h2 class="text-sm font-semibold">数据源</h2>
+              <span
+                class="rounded-full px-2 py-0.5 text-[11px]"
+                :class="sourceStatusClass"
+              >
+                {{ sourceStatusText }}
+              </span>
+            </div>
+
+            <p class="mb-2 text-xs text-slate-500 break-all">{{ folderName || '未选择文件夹' }}</p>
+
+            <div v-if="error" class="mb-2 rounded-md border border-rose-200 bg-rose-50 px-2 py-1 text-xs text-rose-700">
+              {{ error }}
+            </div>
+
+            <div class="mb-2 rounded-md bg-slate-50 px-2 py-1 text-xs text-slate-600">
+              JSON 文件：<b>{{ jsonFiles.length }}</b>
+            </div>
+
+            <ul class="max-h-[62vh] space-y-1 overflow-auto pr-1">
+              <li v-for="f in jsonFiles" :key="f.name">
+                <button
+                  @click="selectFile(f.name)"
+                  class="w-full rounded-md border px-2 py-1.5 text-left text-xs transition"
+                  :class="selectedFile === f.name
+                    ? 'border-brand-300 bg-brand-50 text-brand-700'
+                    : 'border-slate-200 bg-white hover:bg-slate-50'"
+                >
+                  <div class="truncate font-medium">{{ f.name }}</div>
+                  <div class="text-[11px] text-slate-500">{{ f.sizeText }}</div>
+                </button>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="col-span-12 lg:col-span-8 xl:col-span-9 space-y-3">
+          <div class="grid gap-3 md:grid-cols-4">
+            <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-card">
+              <div class="text-xs text-slate-500">当前文件</div>
+              <div class="mt-1 truncate text-sm font-semibold">{{ selectedFile || '-' }}</div>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-card">
+              <div class="text-xs text-slate-500">Provider 预测</div>
+              <div class="mt-1 text-sm font-semibold">{{ analysis.provider }}</div>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-card">
+              <div class="text-xs text-slate-500">条目数</div>
+              <div class="mt-1 text-sm font-semibold">{{ analysis.items }}</div>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-card">
+              <div class="text-xs text-slate-500">角色数</div>
+              <div class="mt-1 text-sm font-semibold">{{ analysis.roles }}</div>
+            </div>
+          </div>
+
+          <section class="rounded-xl border border-slate-200 bg-white p-3 shadow-card">
+            <div class="mb-2 flex items-center justify-between">
+              <h2 class="text-sm font-semibold">JSON 可视化</h2>
+              <button
+                @click="formatJson"
+                :disabled="!rawJson"
+                class="rounded-md border border-slate-300 px-2 py-1 text-xs hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                格式化
+              </button>
+            </div>
+
+            <div v-if="previewRows.length" class="mb-3 overflow-x-auto rounded-lg border border-slate-200">
+              <table class="min-w-full text-xs">
+                <thead class="bg-slate-50 text-slate-600">
+                  <tr>
+                    <th class="px-2 py-2 text-left">#</th>
+                    <th class="px-2 py-2 text-left">role</th>
+                    <th class="px-2 py-2 text-left">provider</th>
+                    <th class="px-2 py-2 text-left">text（标签可视化）</th>
+                    <th class="px-2 py-2 text-left">emotion</th>
+                    <th class="px-2 py-2 text-left">stylePrompt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="row in previewRows" :key="row.idx" class="border-t border-slate-100">
+                    <td class="px-2 py-1.5 text-slate-500">{{ row.idx }}</td>
+                    <td class="px-2 py-1.5">{{ row.role }}</td>
+                    <td class="px-2 py-1.5">
+                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">{{ row.provider }}</span>
+                    </td>
+                    <td class="px-2 py-1.5 max-w-[520px]">
+                      <div class="flex flex-wrap items-center gap-1">
+                        <template v-for="(segment, segIdx) in row.textSegments" :key="`${row.idx}-${segIdx}`">
+                          <span
+                            v-if="segment.type === 'pause'"
+                            class="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-1.5 py-0.5 text-[11px] font-medium text-amber-700"
+                            :title="`停顿时长：${segment.value}`"
+                          >
+                            ⏸ {{ segment.value }}
+                          </span>
+                          <span
+                            v-else-if="segment.type === 'bracket'"
+                            class="inline-flex items-center rounded-md border border-violet-200 bg-violet-50 px-1.5 py-0.5 text-[11px] font-medium text-violet-700"
+                            :title="`括号标记：${segment.value}`"
+                          >
+                            {{ segment.value }}
+                          </span>
+                          <span
+                            v-else
+                            class="whitespace-pre-wrap break-words text-slate-700"
+                          >
+                            {{ segment.value }}
+                          </span>
+                        </template>
+                      </div>
+                    </td>
+                    <td class="px-2 py-1.5">{{ row.emotion }}</td>
+                    <td class="px-2 py-1.5">{{ row.stylePrompt ? '有' : '-' }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <pre class="max-h-[52vh] overflow-auto rounded-lg bg-slate-900 p-3 text-[12px] leading-5 text-slate-100">{{ rawJson || '请选择一个 JSON 文件' }}</pre>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const DB_NAME = 'tts-json-viewer-db';
+      const STORE_NAME = 'handles';
+      const HANDLE_KEY = 'selected-directory-handle';
+
+      function openDb() {
+        return new Promise((resolve, reject) => {
+          const req = indexedDB.open(DB_NAME, 1);
+          req.onupgradeneeded = () => {
+            const db = req.result;
+            if (!db.objectStoreNames.contains(STORE_NAME)) {
+              db.createObjectStore(STORE_NAME);
+            }
+          };
+          req.onsuccess = () => resolve(req.result);
+          req.onerror = () => reject(req.error);
+        });
+      }
+
+      async function idbSet(key, value) {
+        const db = await openDb();
+        await new Promise((resolve, reject) => {
+          const tx = db.transaction(STORE_NAME, 'readwrite');
+          tx.objectStore(STORE_NAME).put(value, key);
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => reject(tx.error);
+        });
+        db.close();
+      }
+
+      async function idbGet(key) {
+        const db = await openDb();
+        const val = await new Promise((resolve, reject) => {
+          const tx = db.transaction(STORE_NAME, 'readonly');
+          const req = tx.objectStore(STORE_NAME).get(key);
+          req.onsuccess = () => resolve(req.result);
+          req.onerror = () => reject(req.error);
+        });
+        db.close();
+        return val;
+      }
+
+      async function verifyReadPermission(handle, requestIfNeeded = false) {
+        const opts = { mode: 'read' };
+        if ((await handle.queryPermission(opts)) === 'granted') return true;
+        if (requestIfNeeded && (await handle.requestPermission(opts)) === 'granted') return true;
+        return false;
+      }
+
+      const { createApp, computed } = Vue;
+
+      createApp({
+        data() {
+          return {
+            directoryHandle: null,
+            folderName: '',
+            jsonFiles: [],
+            selectedFile: '',
+            rawJson: '',
+            parsedData: null,
+            error: '',
+            sourceStatus: 'none'
+          };
+        },
+        computed: {
+          sourceStatusText() {
+            if (this.sourceStatus === 'restored') return '已恢复';
+            if (this.sourceStatus === 'selected') return '已选择';
+            if (this.sourceStatus === 'denied') return '需授权';
+            return '未连接';
+          },
+          sourceStatusClass() {
+            if (this.sourceStatus === 'restored') return 'bg-emerald-50 text-emerald-700';
+            if (this.sourceStatus === 'selected') return 'bg-brand-50 text-brand-700';
+            if (this.sourceStatus === 'denied') return 'bg-amber-50 text-amber-700';
+            return 'bg-slate-100 text-slate-600';
+          },
+          analysis() {
+            const arr = Array.isArray(this.parsedData) ? this.parsedData : [];
+            const roles = new Set(arr.map((x) => x?.role).filter(Boolean));
+            const rowProviders = arr.map((x) => this.inferProvider(x));
+            const allSame = rowProviders.length > 0 && rowProviders.every((p) => p === rowProviders[0]);
+            const provider = allSame ? `${rowProviders[0]} (全一致)` : '-';
+
+            return {
+              provider,
+              items: arr.length,
+              roles: roles.size
+            };
+          },
+          previewRows() {
+            const arr = Array.isArray(this.parsedData) ? this.parsedData : [];
+            return arr.slice(0, 50).map((item, i) => {
+              const text = String(item?.text || '').slice(0, 240);
+              return {
+                idx: i + 1,
+                role: item?.role || '-',
+                provider: this.inferProvider(item),
+                text,
+                textSegments: this.parseTextSegments(text),
+                emotion: item?.options?.voiceSetting?.emotion || '-',
+                stylePrompt: item?.stylePrompt || ''
+              };
+            });
+          }
+        },
+        methods: {
+          inferProvider(item) {
+            const hasStylePrompt = typeof item?.stylePrompt === 'string' && item.stylePrompt.trim();
+            const hasEmotion = Boolean(item?.options?.voiceSetting?.emotion);
+            if (hasStylePrompt && !hasEmotion) return 'volcengine_ws';
+            if (!hasStylePrompt && hasEmotion) return 'minimax_http';
+            if (hasStylePrompt && hasEmotion) return 'mixed/dual';
+            return 'unknown';
+          },
+
+          parseTextSegments(text) {
+            const input = String(text || '');
+            if (!input) return [];
+
+            const tokenRegex = /(\u003c#[0-9]+(?:\.[0-9]+)?#\u003e|\[[^\]]+\]|\([^)]+\)|（[^）]+）)/g;
+            const emotionTagMap = {
+              laughs: '笑声',
+              chuckle: '轻笑',
+              coughs: '咳嗽',
+              'clear-throat': '清嗓',
+              groans: '呻吟/闷哼',
+              breath: '呼吸声',
+              pant: '喘息',
+              inhale: '吸气',
+              exhale: '呼气',
+              gasps: '倒吸气',
+              sniffs: '抽鼻',
+              sighs: '叹气',
+              snorts: '哼鼻',
+              burps: '打嗝',
+              'lip-smacking': '咂嘴',
+              humming: '哼唱',
+              hissing: '嘶声',
+              emm: '嗯（迟疑）',
+              whistles: '吹口哨',
+              sneezes: '打喷嚏',
+              crying: '哭泣',
+              applause: '掌声'
+            };
+            const segments = [];
+            let lastIndex = 0;
+
+            for (const match of input.matchAll(tokenRegex)) {
+              const token = match[0];
+              const index = match.index ?? 0;
+
+              if (index > lastIndex) {
+                segments.push({ type: 'text', value: input.slice(lastIndex, index) });
+              }
+
+              if (/^\u003c#[0-9]+(?:\.[0-9]+)?#\u003e$/.test(token)) {
+                const pauseVal = token.match(/[0-9]+(?:\.[0-9]+)?/)?.[0] || '';
+                segments.push({ type: 'pause', value: `${pauseVal}s` });
+              } else if (/^\[\s*(?:p(?:ause)?)\s*[:：=]?\s*[0-9]+(?:\.[0-9]+)?\s*\]$/i.test(token)) {
+                const pauseVal = token.match(/[0-9]+(?:\.[0-9]+)?/)?.[0] || '';
+                segments.push({ type: 'pause', value: `${pauseVal}s` });
+              } else {
+                const rawTag = token.replace(/^[（(]\s*|\s*[)）]$/g, '').trim().toLowerCase();
+                const zhTag = emotionTagMap[rawTag];
+                const displayValue = zhTag ? `${zhTag}（${token}）` : token;
+                segments.push({ type: 'bracket', value: displayValue });
+              }
+
+              lastIndex = index + token.length;
+            }
+
+            if (lastIndex < input.length) {
+              segments.push({ type: 'text', value: input.slice(lastIndex) });
+            }
+
+            return segments;
+          },
+
+          async pickFolder() {
+            this.error = '';
+            try {
+              const handle = await window.showDirectoryPicker({ mode: 'read' });
+              const granted = await verifyReadPermission(handle, true);
+              if (!granted) {
+                this.sourceStatus = 'denied';
+                this.error = '文件夹读取权限未授予。';
+                return;
+              }
+              this.directoryHandle = handle;
+              this.folderName = handle.name;
+              this.sourceStatus = 'selected';
+              await idbSet(HANDLE_KEY, handle);
+              await this.reloadFiles();
+            } catch (e) {
+              if (e && e.name === 'AbortError') return;
+              this.error = `选择文件夹失败：${e?.message || String(e)}`;
+            }
+          },
+
+          async restoreFolderHandle() {
+            this.error = '';
+            if (!window.showDirectoryPicker) {
+              this.error = '当前浏览器不支持 File System Access API。建议使用 Chromium 内核浏览器。';
+              return;
+            }
+
+            try {
+              const handle = await idbGet(HANDLE_KEY);
+              if (!handle) return;
+
+              const granted = await verifyReadPermission(handle, false);
+              this.directoryHandle = handle;
+              this.folderName = handle.name;
+
+              if (!granted) {
+                this.sourceStatus = 'denied';
+                this.error = '已恢复文件夹句柄，但需要再次授权。点击“选择文件夹”重新授予权限。';
+                return;
+              }
+
+              this.sourceStatus = 'restored';
+              await this.reloadFiles();
+            } catch (e) {
+              this.error = `恢复句柄失败：${e?.message || String(e)}`;
+            }
+          },
+
+          async reloadFiles() {
+            this.error = '';
+            this.jsonFiles = [];
+
+            if (!this.directoryHandle) return;
+
+            try {
+              const granted = await verifyReadPermission(this.directoryHandle, false);
+              if (!granted) {
+                this.sourceStatus = 'denied';
+                this.error = '没有读取权限，请重新选择文件夹授权。';
+                return;
+              }
+
+              const files = [];
+              for await (const [name, handle] of this.directoryHandle.entries()) {
+                if (handle.kind === 'file' && name.toLowerCase().endsWith('.json')) {
+                  const file = await handle.getFile();
+                  files.push({
+                    name,
+                    size: file.size,
+                    sizeText: `${(file.size / 1024).toFixed(1)} KB`
+                  });
+                }
+              }
+
+              files.sort((a, b) => a.name.localeCompare(b.name));
+              this.jsonFiles = files;
+
+              if (files.length === 0) {
+                this.selectedFile = '';
+                this.rawJson = '';
+                this.parsedData = null;
+                return;
+              }
+
+              const nextFile = files.some((f) => f.name === this.selectedFile)
+                ? this.selectedFile
+                : files[0].name;
+              await this.selectFile(nextFile);
+            } catch (e) {
+              this.error = `读取文件夹失败：${e?.message || String(e)}`;
+            }
+          },
+
+          async selectFile(name) {
+            if (!this.directoryHandle) return;
+            this.error = '';
+            try {
+              const fileHandle = await this.directoryHandle.getFileHandle(name);
+              const file = await fileHandle.getFile();
+              const text = await file.text();
+              this.selectedFile = name;
+              this.rawJson = text;
+
+              try {
+                this.parsedData = JSON.parse(text);
+              } catch {
+                this.parsedData = null;
+              }
+            } catch (e) {
+              this.error = `读取文件失败：${e?.message || String(e)}`;
+            }
+          },
+
+          formatJson() {
+            if (!this.rawJson) return;
+            try {
+              const parsed = JSON.parse(this.rawJson);
+              this.rawJson = JSON.stringify(parsed, null, 2);
+              this.parsedData = parsed;
+            } catch {
+              this.error = '当前文件不是合法 JSON，无法格式化。';
+            }
+          }
+        },
+        async mounted() {
+          await this.restoreFolderHandle();
+        }
+      }).mount('#app');
+    </script>
+  </body>
+</html>
