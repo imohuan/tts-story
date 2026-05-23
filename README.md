@@ -1,6 +1,6 @@
-# doubao-tts
+# 多平台批量 TTS
 
-基于 [Bun](https://bun.sh) 的批量语音合成工具，支持从 JSON 脚本批量生成多角色对话音频，并自动合并为完整音轨。
+基于 [Bun](https://bun.sh) 的批量语音合成工具，支持火山引擎（豆包）、MiniMax、Edge TTS 等多种后端；可从 JSON 脚本批量生成多角色对话音频，并自动合并为完整音轨。
 
 当前内置三种 TTS 后端：
 
@@ -254,7 +254,7 @@ bun run check
 ## 项目结构
 
 ```
-doubao-tts/
+项目根目录/
 ├── input/                 # 输入 JSON 脚本
 ├── output/                # 合成结果（git 忽略）
 ├── src/
