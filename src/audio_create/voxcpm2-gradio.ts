@@ -1,83 +1,65 @@
+import { join, resolve } from "node:path";
+import { existsSync, readdirSync } from "node:fs";
 import { Client, handle_file } from "@gradio/client";
 import type { Client as GradioClient } from "@gradio/client";
-import { envString, envNumber, type RoleMap } from "../config";
 import { logger } from "../utils/logger";
 import type { BatchItem } from "../config";
 import { resolveRole } from "../config";
 import { BaseAudioCreator, registerAudioProvider } from "./base";
+import {
+  getVoxCPM2GradioDefaults,
+  type VoxCPM2GradioConfig,
+} from "./voxcpm2-gradio.config";
 
-// ── 默认角色映射 ──────────────────────────────────────
-const DEFAULT_ROLE_MAP: RoleMap = {
-  narrator: { nameZh: "旁白", speaker: "" },
-  male_lead: { nameZh: "男主", speaker: "" },
-  female_lead: { nameZh: "女主", speaker: "" },
-};
+// ── 参考音频目录 ──────────────────────────────────────
+const VOICES_DIR = resolve("references_voices");
 
-// ── 配置类型 ──────────────────────────────────────────
-type Config = {
-  host: string;
-  cfgValue: number;
-  doNormalize: boolean;
-  denoise: boolean;
-  ditSteps: number;
-  roleMap: RoleMap;
-};
+/** 根据名称或路径解析参考音频的完整路径 */
+function resolveRefWav(raw: string): string {
+  if (!raw) return "";
 
-function defaults(): Config {
-  return {
-    host: envString("VOXCPM2_HOST", "localhost:8808"),
-    cfgValue: envNumber("VOXCPM2_CFG_VALUE", 2),
-    doNormalize: envString("VOXCPM2_DO_NORMALIZE", "false") === "true",
-    denoise: envString("VOXCPM2_DENOISE", "false") === "true",
-    ditSteps: envNumber("VOXCPM2_DIT_STEPS", 10),
-    roleMap: DEFAULT_ROLE_MAP,
-  };
+  // 已经是完整路径且文件存在 → 直接用
+  if (existsSync(raw)) return raw;
+
+  // 在 references_voices 里按名称匹配（忽略后缀）
+  if (existsSync(VOICES_DIR)) {
+    const files = readdirSync(VOICES_DIR);
+    const lower = raw.toLowerCase();
+    for (const f of files) {
+      const stem = f.replace(/\.[^.]+$/, "").toLowerCase();
+      if (stem === lower) {
+        return join(VOICES_DIR, f);
+      }
+    }
+  }
+
+  // 都匹配不到，原样返回让下游报错
+  return raw;
 }
 
-/**
- * VoxCPM2 Gradio 音频生成器
- *
- * 通过 @gradio/client 直连 VoxCPM2 Gradio 服务，支持四种合成模式，自动根据参数判断。
- *
- * ── 模式自动判断 ──
- * 有 refWav + promptTextValue → ultimate_clone（极致克隆）
- * 有 refWav + controlInstruction → controllable_clone（可控克隆）
- * 有 refWav 无其他            → pure_audio_clone（纯音频克隆）
- * 其他                        → voice_design（纯文本声音设计）
- *
- * ── item 字段映射 ──
- * item.stylePrompt              → control_instruction（声音描述）
- * item.options.refWav           → 参考音频路径
- * item.options.promptTextValue  → 极致克隆的 prompt 文本
- * item.options.controlInstruction → 覆盖 stylePrompt 的声音描述
- * item.options.cfgValue / doNormalize / denoise / ditSteps → 覆盖全局参数
- *
- * ── 配置优先级 ──
- * item.options > JSON 文件级 providerConfig > .env 全局
- *
- * ── 环境变量 ──
- * VOXCPM2_HOST          Gradio 地址，默认 localhost:8808
- * VOXCPM2_CFG_VALUE     CFG 强度 1.0~3.0，默认 2
- * VOXCPM2_DO_NORMALIZE  归一化，默认 false
- * VOXCPM2_DENOISE       降噪，默认 false
- * VOXCPM2_DIT_STEPS     DIT 步数，默认 10
- *
- * ── JSON 输入示例 ──
- * {
- *   "items": [
- *     { "text": "你好世界", "stylePrompt": "温柔甜美的年轻女孩" },
- *     { "text": "大家好", "stylePrompt": "沉稳中年男性", "options": { "refWav": "./ref.wav" } },
- *     { "text": "测试", "options": { "refWav": "./ref.wav", "promptTextValue": "参考文本" } }
- *   ]
- * }
- */
+// ── VoxCPM2 Gradio 音频生成器 ─────────────────────────
+// 通过 @gradio/client 直连 VoxCPM2 Gradio 服务，自动根据参数判断合成模式。
+//
+// 模式自动判断：
+//   有 refWav + stylePrompt → 极致克隆
+//   有 refWav 无 stylePrompt → 纯音频克隆
+//   无 refWav               → 声音设计
+//
+// item 字段：
+//   item.text         → 要合成的文本
+//   item.stylePrompt  → 声音描述 / 极致克隆 prompt（复用同一个字段）
+//   item.refWav       → 参考音频（完整路径 或 references_voices/ 下的文件名）
+//   item.options      → 覆盖 cfgValue / doNormalize / denoise / ditSteps
+//
+// 配置优先级：item.options > JSON 文件级 providerConfig > .env 全局
+
 export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
-  private opts: Config;
+  private opts: VoxCPM2GradioConfig;
   private client: GradioClient | null = null;
 
   constructor(config: Record<string, unknown>) {
     super();
-    this.opts = { ...defaults(), ...config } as Config;
+    this.opts = { ...getVoxCPM2GradioDefaults(), ...config } as VoxCPM2GradioConfig;
   }
 
   override getRoleMap() {
@@ -86,8 +68,8 @@ export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
 
   private async getClient(): Promise<GradioClient> {
     if (this.client) return this.client;
-    const url = `http://${this.opts.host}`;
-    logger.info(`VoxCPM2 连接: ${url}`);
+    const url = "http://" + this.opts.host;
+    logger.info("VoxCPM2 " + url);
     this.client = await Client.connect(url);
     return this.client;
   }
@@ -97,24 +79,24 @@ export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
     const client = await this.getClient();
     const cfg = { ...this.opts, ...item.options };
 
-    const controlInstruction = (item.options?.controlInstruction as string)
-      ?? item.stylePrompt ?? "";
-    const refWav = (item.options?.refWav as string) ?? "";
-    const promptText = (item.options?.promptTextValue as string) ?? "";
-    const usePromptText = !!(refWav && promptText);
+    const stylePrompt = item.stylePrompt ?? "";
+    const refWav = resolveRefWav(item.refWav ?? (item.options?.refWav as string) ?? "");
+
+    // 有 refWav + stylePrompt → 极致克隆
+    const usePromptText = !!(refWav && stylePrompt);
 
     const mode = usePromptText ? "极致克隆"
-      : refWav ? (controlInstruction ? "可控克隆" : "纯音频克隆")
+      : refWav ? "纯音频克隆"
       : "声音设计";
 
-    logger.info(`VoxCPM2 [${mode}] ${resolved.nameZh}: ${item.text.slice(0, 30)}...`);
+    logger.info("VoxCPM2 [" + mode + "] " + resolved.nameZh + ": " + item.text.slice(0, 30) + "...");
 
     const result = await client.predict("/generate", [
       item.text,
-      controlInstruction,
+      usePromptText ? "" : stylePrompt,
       refWav ? handle_file(refWav) : null,
       usePromptText,
-      promptText,
+      usePromptText ? stylePrompt : "",
       cfg.cfgValue as number,
       cfg.doNormalize as boolean,
       cfg.denoise as boolean,
@@ -124,13 +106,13 @@ export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
     const data = result.data as unknown;
     const audioPath: string = Array.isArray(data) ? (data[1] as string) : (data as string);
 
-    if (!audioPath) throw new Error(`返回数据异常: ${JSON.stringify(data)}`);
+    if (!audioPath) throw new Error("VoxCPM2 " + JSON.stringify(data));
 
     const file = Bun.file(audioPath);
-    if (!(await file.exists())) throw new Error(`音频文件不存在: ${audioPath}`);
+    if (!(await file.exists())) throw new Error("File not found: " + audioPath);
 
     const audio = new Uint8Array(await file.arrayBuffer());
-    logger.info(`${resolved.nameZh} (VoxCPM2) 完成, ${audio.length} bytes`);
+    logger.info(resolved.nameZh + " (VoxCPM2) " + audio.length + " bytes");
     return audio;
   }
 }

@@ -101,6 +101,8 @@ export type ResolvedRole = {
 export type BatchItem = {
   text: string;
   stylePrompt?: string;
+  /** 参考音频路径或名称（用于克隆模式），匹配 references_voices/ 目录 */
+  refWav?: string;
   /** 角色名，由各 provider 的 roleMap 映射到对应的声音 ID；默认 "narrator" */
   role?: string;
   /** 直接指定 provider 专用的声音 ID，优先级高于 role */

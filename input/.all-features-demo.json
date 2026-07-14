@@ -1,0 +1,190 @@
+﻿{
+  "config": {
+    "provider": "auto",
+    "providerConfig": {},
+    "roleMap": {
+      "narrator": { "nameZh": "旁白", "speaker": "zh-CN-XiaoxiaoNeural" },
+      "male_lead": { "nameZh": "男主", "speaker": "zh-CN-YunxiNeural" },
+      "female_lead": { "nameZh": "女主", "speaker": "zh-CN-XiaoyiNeural" },
+      "sweet_girl": { "nameZh": "甜妹", "speaker": "Chinese (Mandarin)_Sweet_Lady" },
+      "arrogant_girl": { "nameZh": "傲娇", "speaker": "Arrogant_Miss" },
+      "gentleman": { "nameZh": "绅士", "speaker": "Chinese (Mandarin)_Gentleman" }
+    }
+  },
+  "items": [
+    {
+      "description": "案例一：火山引擎 stylePrompt 自然语言控制声线 + 情绪 + 语速 + 停顿 + 重音",
+      "text": "我没有背叛你。",
+      "role": "male_lead",
+      "stylePrompt": "男声，青年音色，音调中等，音色明亮圆润；发音清晰，气息由稳转急；情绪压抑克制；语速0.95，句末短停120ms，句尾压低。"
+    },
+    {
+      "description": "案例一：火山引擎 stylePrompt — 女声质问",
+      "text": "那你为什么一直不解释？",
+      "role": "female_lead",
+      "stylePrompt": "女声，青年音色，音调中等偏高，清亮柔和但带质问感；语速0.92，重读'为什么'，句尾压低。"
+    },
+    {
+      "description": "案例二：MiniMax — emotion枚举 + 停顿标记 + 语气词标签 + voiceType直指定 + 音效 + 音色微调，全都混在一起",
+      "text": "老公~<#0.08#>人家要抱抱(laughs)",
+      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
+      "options": {
+        "voiceSetting": { "emotion": "happy", "speed": 0.92 },
+        "voiceModify": { "pitch": 10, "intensity": 10, "timbre": 15 }
+      }
+    },
+    {
+      "description": "案例二：MiniMax — 多停顿 + 多情绪快速切换",
+      "text": "好<#0.1#>好<#0.1#>好(sighs)<#0.3#>行了吧。",
+      "role": "male_lead",
+      "options": {
+        "voiceSetting": { "emotion": "calm", "speed": 1.0 },
+        "voiceModify": { "pitch": -15, "intensity": -10, "timbre": -5 }
+      }
+    },
+    {
+      "description": "案例二：MiniMax — 音效（礼堂回音）",
+      "text": "各位旅客请注意，列车即将到站。",
+      "role": "narrator",
+      "options": {
+        "voiceSetting": { "emotion": "calm", "speed": 0.9 },
+        "voiceModify": { "soundEffects": "auditorium_echo" }
+      }
+    },
+    {
+      "description": "案例二：MiniMax — 音效（电话失真）+ 语气词",
+      "text": "喂？听得到吗？(breath)信号好像不太好。",
+      "role": "male_lead",
+      "options": {
+        "voiceSetting": { "emotion": "surprised" },
+        "voiceModify": { "soundEffects": "lofi_telephone" }
+      }
+    },
+    {
+      "description": "案例三：Edge TTS — style/speed/pitch 控制，显式指定 provider",
+      "text": "今天的天气不错，适合出行。",
+      "role": "narrator",
+      "provider": "edge_tts",
+      "options": { "style": "newscast", "speed": 1.05, "pitch": "0" }
+    },
+    {
+      "description": "案例三：Edge TTS — 不同角色不同风格",
+      "text": "别担心，我会陪着你。",
+      "role": "female_lead",
+      "provider": "edge_tts",
+      "options": { "style": "calm", "speed": 0.95, "pitch": "-10" }
+    },
+    {
+      "description": "案例三：Edge TTS — 男声 cheerful",
+      "text": "我们现在出发。",
+      "role": "male_lead",
+      "provider": "edge_tts",
+      "options": { "style": "cheerful", "speed": 1.0, "pitch": "5" }
+    },
+    {
+      "description": "案例四：混合模式 — 同文件内，火山stylePrompt + MiniMax options + Edge TTS 全混用，auto 自动判断",
+      "text": "我没有背叛你。",
+      "role": "male_lead",
+      "stylePrompt": "男声，青年音色，音调中等；情绪压抑；语速0.95，句尾短停120ms。"
+    },
+    {
+      "description": "案例四：混合模式 — MiniMax 情绪+停顿",
+      "text": "那你为什么<#0.3#>一直不解释？(sighs)",
+      "role": "female_lead",
+      "options": {
+        "voiceSetting": { "emotion": "angry", "speed": 0.95 }
+      }
+    },
+    {
+      "description": "案例四：混合模式 — Edge TTS 旁白总结",
+      "text": "以上对话已自动适配不同 TTS 引擎。",
+      "role": "narrator",
+      "provider": "edge_tts",
+      "options": { "style": "newscast", "speed": 1.0, "pitch": "0" }
+    },
+    {
+      "description": "案例五：多角色长对话 — 甜妹撒娇+傲娇吃醋+绅士无奈，停顿+语气词+多情绪全上",
+      "text": "哥哥~今天加班好晚，我好想你呀<#0.3#>先抱一下嘛(laughs)",
+      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
+      "options": { "voiceSetting": { "emotion": "happy", "speed": 0.93 } }
+    },
+    {
+      "description": "案例五：多角色 — 傲娇吃醋",
+      "text": "她每次都说就一下。<#0.2#>结果最后整个人都黏在你怀里。",
+      "voiceType": "Arrogant_Miss",
+      "options": { "voiceSetting": { "emotion": "angry", "speed": 0.97 } }
+    },
+    {
+      "description": "案例五：多角色 — 甜妹反击",
+      "text": "我黏他怎么了？他身上暖暖的，抱起来本来就很舒服。",
+      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
+      "options": { "voiceSetting": { "emotion": "happy", "speed": 0.92 } }
+    },
+    {
+      "description": "案例五：多角色 — 绅士无奈",
+      "text": "你们两个能不能别把'抱我'说得像在下命令。",
+      "voiceType": "Chinese (Mandarin)_Gentleman",
+      "options": { "voiceSetting": { "emotion": "calm", "speed": 0.91 } }
+    },
+    {
+      "description": "案例五：多角色 — 甜妹撒娇求投喂",
+      "text": "那你喂我吃一口蛋糕好不好<#0.2#>就一小口(sighs)",
+      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
+      "options": { "voiceSetting": { "emotion": "happy", "speed": 0.92 } }
+    },
+    {
+      "description": "案例五：多角色 — 傲娇宣示主权",
+      "text": "舒服也轮不到你先说。<#0.15#>今晚他要抱，也是先抱我。",
+      "voiceType": "Arrogant_Miss",
+      "options": { "voiceSetting": { "emotion": "calm", "speed": 0.95 } }
+    },
+    {
+      "description": "案例五：多角色 — 绅士爆发",
+      "text": "够了。<#0.25#>再吵下去，今晚谁都别想好过。",
+      "voiceType": "Chinese (Mandarin)_Gentleman",
+      "options": { "voiceSetting": { "emotion": "angry", "speed": 0.94 } }
+    },
+    {
+      "description": "案例六：长篇叙事 — 旁白+角色对话+内心独白混合编排，多情绪多停顿",
+      "text": "林筱鸢一人走在上学的路上，回想起这几天的遭遇，生活几乎完全被贞操带占据。",
+      "role": "narrator",
+      "options": { "voiceSetting": { "emotion": "calm", "speed": 0.96 } }
+    },
+    {
+      "description": "案例六：长篇 — 角色惊恐独白",
+      "text": "不行，必须赶紧离开这里<#0.25#>我记得前面有个公共厕所，先去那边。",
+      "role": "female_lead",
+      "options": { "voiceSetting": { "emotion": "fearful", "speed": 1.03 } }
+    },
+    {
+      "description": "案例六：长篇 — 偶遇同学",
+      "text": "林筱鸢，真巧啊，一起走吧。",
+      "voiceType": "Arrogant_Miss",
+      "options": { "voiceSetting": { "emotion": "happy", "speed": 0.98 } }
+    },
+    {
+      "description": "案例六：长篇 — 角色慌张回应",
+      "text": "额<#0.15#>安思瑶<#0.2#>算了，我身体有点不舒服，你先去吧。",
+      "role": "female_lead",
+      "options": { "voiceSetting": { "emotion": "fearful", "speed": 0.9 } }
+    },
+    {
+      "description": "案例六：长篇 — 角色愤怒崩溃",
+      "text": "唔<#0.12#>啊啊啊啊，可恶<#0.18#>为什么突然这么用力。",
+      "role": "female_lead",
+      "options": { "voiceSetting": { "emotion": "angry", "speed": 1.08 } }
+    },
+    {
+      "description": "案例六：长篇 — 角色悲伤",
+      "text": "呜<#0.15#>才发现自己脸上居然有了一丝丝泪痕。被如此残忍地对待，没人能淡定吧。",
+      "role": "female_lead",
+      "options": { "voiceSetting": { "emotion": "sad", "speed": 0.87 } }
+    },
+    {
+      "description": "案例六：长篇 — 角色崩溃后的愤怒",
+      "text": "该死<#0.15#>这个贞操带是想把我弄得社会性死亡吗<#0.18#>呼<#0.15#>好累。",
+      "role": "female_lead",
+      "options": { "voiceSetting": { "emotion": "angry", "speed": 0.9 } }
+    }
+  ]
+}

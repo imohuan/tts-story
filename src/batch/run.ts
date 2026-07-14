@@ -113,6 +113,8 @@ async function scanJsonFiles(inputDir: string): Promise<string[]> {
   const jsonFiles: string[] = [];
 
   for (const entry of entries) {
+    // 跳过 . 开头的文件（如 .all-features-demo.json）
+    if (entry.startsWith(".")) continue;
     if (!entry.toLowerCase().endsWith(".json")) continue;
     const fullPath = join(inputDir, entry);
     const s = await stat(fullPath);
