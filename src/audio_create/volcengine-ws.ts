@@ -77,9 +77,9 @@ export class VolcEngineWsAudioCreator extends BaseAudioCreator {
   }
 
   private buildRequestPayload(item: BatchItem): Uint8Array {
-    const { speaker } = resolveRole(item, this.opts.roleMap);
-    // 合并单条 item 的 options 覆盖全局配置
-    const merged = { ...this.opts, ...item.options };
+    const resolved = resolveRole(item, this.opts.roleMap);
+    const merged = { ...this.opts, ...resolved.options };
+    const speaker = resolved.options.speaker as string;
     const request = {
       user: {
         uid: crypto.randomUUID(),
@@ -132,12 +132,12 @@ export class VolcEngineWsAudioCreator extends BaseAudioCreator {
 
       if (totalAudio.length === 0) {
         throw new Error(
-          `未收到音频数据: ${resolved.nameZh} (${resolved.speaker})`,
+          `未收到音频数据: ${resolved.nameZh} (${resolved.options.speaker})`,
         );
       }
 
       logger.info(
-        `${resolved.nameZh} (${resolved.speaker}) 合成完成, ${totalAudio.length} chunks`,
+        `${resolved.nameZh} (${resolved.options.speaker}) 合成完成, ${totalAudio.length} chunks`,
       );
       return Buffer.concat(totalAudio);
     } finally {

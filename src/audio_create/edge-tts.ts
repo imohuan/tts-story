@@ -31,8 +31,8 @@ export class EdgeTtsAudioCreator extends BaseAudioCreator {
 
   override async synthOne(item: BatchItem): Promise<Uint8Array> {
     const resolved = resolveRole(item, this.opts.roleMap);
-    const merged = { ...this.opts, ...item.options } as EdgeTtsConfig;
-    const voice = resolved.speaker || merged.voice;
+    const merged = { ...this.opts, ...resolved.options } as EdgeTtsConfig;
+    const voice = (resolved.options.speaker as string) || merged.voice;
 
     const base = (merged.baseUrl || "https://tts.wangwangit.com").replace(/\/$/, "");
     const url = `${base}/v1/audio/speech`;

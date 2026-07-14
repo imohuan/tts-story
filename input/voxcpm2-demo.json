@@ -2,9 +2,10 @@
   "config": {
     "provider": "voxcpm2_gradio",
     "roleMap": {
-      "narrator": { "nameZh": "旁白", "speaker": "" },
-      "male_lead": { "nameZh": "男主", "speaker": "" },
-      "female_lead": { "nameZh": "女主", "speaker": "" }
+      "narrator": { "nameZh": "旁白" },
+      "male_lead": { "nameZh": "男主" },
+      "female_lead": { "nameZh": "女主" },
+      "sweet_girl": { "nameZh": "甜妹", "refWav": "甜妹" }
     }
   },
   "items": [
@@ -19,14 +20,14 @@
       "stylePrompt": "沉稳专业的中年男性，语速稍慢，声音浑厚"
     },
     {
-      "description": "纯音频克隆：用参考音频克隆音色",
+      "description": "纯音频克隆：用参考音频克隆音色（refWav 来自 roleMap.sweet_girl）",
       "text": "大家好，我是你们的新朋友，很高兴认识大家。",
-      "refWav": "甜妹"
+      "role": "sweet_girl"
     },
     {
-      "description": "极致克隆：参考音频 + stylePrompt 作为 prompt 文本",
+      "description": "极致克隆：参考音频 + stylePrompt 作为 prompt 文本（refWav 来自 roleMap）",
       "text": "这个是用来测试极致克隆模式的效果。",
-      "refWav": "甜妹",
+      "role": "sweet_girl",
       "stylePrompt": "大家好我是甜妹今天来给大家唱首歌"
     }
   ]

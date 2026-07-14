@@ -68,7 +68,7 @@ export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
 
   private async getClient(): Promise<GradioClient> {
     if (this.client) return this.client;
-    const url = "http://" + this.opts.host;
+    const url = /^https?:\/\//i.test(this.opts.host) ? this.opts.host : "http://" + this.opts.host;
     logger.info("VoxCPM2 " + url);
     this.client = await Client.connect(url);
     return this.client;
@@ -77,10 +77,10 @@ export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
   override async synthOne(item: BatchItem): Promise<Uint8Array> {
     const resolved = resolveRole(item, this.opts.roleMap);
     const client = await this.getClient();
-    const cfg = { ...this.opts, ...item.options };
+    const cfg = { ...this.opts, ...resolved.options };
 
     const stylePrompt = item.stylePrompt ?? "";
-    const refWav = resolveRefWav(item.refWav ?? (item.options?.refWav as string) ?? "");
+    const refWav = resolveRefWav(item.refWav ?? (resolved.options.refWav as string) ?? "");
 
     // 有 refWav + stylePrompt → 极致克隆
     const usePromptText = !!(refWav && stylePrompt);
@@ -104,14 +104,46 @@ export class VoxCPM2GradioAudioCreator extends BaseAudioCreator {
     ]);
 
     const data = result.data as unknown;
-    const audioPath: string = Array.isArray(data) ? (data[1] as string) : (data as string);
 
-    if (!audioPath) throw new Error("VoxCPM2 " + JSON.stringify(data));
+    // Gradio 返回格式：可能是数组 [FileData] 或字符串
+    const fileObj = (Array.isArray(data) ? data[0] : data) as Record<string, unknown> | null;
 
-    const file = Bun.file(audioPath);
-    if (!(await file.exists())) throw new Error("File not found: " + audioPath);
+    if (!fileObj || typeof fileObj !== "object") {
+      throw new Error(
+        `VoxCPM2 返回数据异常：期望 FileData 对象，实际收到 ${typeof data} —— ${JSON.stringify(data).slice(0, 300)}`,
+      );
+    }
 
-    const audio = new Uint8Array(await file.arrayBuffer());
+    const remotePath = fileObj.path as string | undefined;
+    const remoteUrl = fileObj.url as string | undefined;
+    let audio: Uint8Array | undefined;
+
+    // 优先尝试本地路径（@gradio/client 可能已下载到临时目录）
+    if (remotePath) {
+      const localFile = Bun.file(remotePath);
+      if (await localFile.exists()) {
+        audio = new Uint8Array(await localFile.arrayBuffer());
+      }
+    }
+
+    // 本地不存在，从远程 URL 下载
+    if (!audio) {
+      const downloadUrl = remoteUrl ?? remotePath;
+      if (!downloadUrl) {
+        throw new Error(
+          `VoxCPM2 返回数据中无音频 URL/path：${JSON.stringify(fileObj).slice(0, 300)}`,
+        );
+      }
+      logger.info("VoxCPM2 下载音频: " + downloadUrl.slice(0, 80) + "...");
+      const resp = await fetch(downloadUrl);
+      if (!resp.ok) {
+        throw new Error(
+          `VoxCPM2 音频下载失败 HTTP ${resp.status} ${resp.statusText} —— ${downloadUrl.slice(0, 120)}`,
+        );
+      }
+      audio = new Uint8Array(await resp.arrayBuffer());
+    }
+
     logger.info(resolved.nameZh + " (VoxCPM2) " + audio.length + " bytes");
     return audio;
   }

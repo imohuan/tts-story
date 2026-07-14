@@ -1,4 +1,4 @@
-﻿{
+{
   "config": {
     "provider": "auto",
     "providerConfig": {},
@@ -6,7 +6,7 @@
       "narrator": { "nameZh": "旁白", "speaker": "zh-CN-XiaoxiaoNeural" },
       "male_lead": { "nameZh": "男主", "speaker": "zh-CN-YunxiNeural" },
       "female_lead": { "nameZh": "女主", "speaker": "zh-CN-XiaoyiNeural" },
-      "sweet_girl": { "nameZh": "甜妹", "speaker": "Chinese (Mandarin)_Sweet_Lady" },
+      "sweet_girl": { "nameZh": "甜妹", "speaker": "Chinese (Mandarin)_Sweet_Lady", "voiceSetting": { "speed": 0.92 } },
       "arrogant_girl": { "nameZh": "傲娇", "speaker": "Arrogant_Miss" },
       "gentleman": { "nameZh": "绅士", "speaker": "Chinese (Mandarin)_Gentleman" }
     }
@@ -105,7 +105,7 @@
     {
       "description": "案例五：多角色长对话 — 甜妹撒娇+傲娇吃醋+绅士无奈，停顿+语气词+多情绪全上",
       "text": "哥哥~今天加班好晚，我好想你呀<#0.3#>先抱一下嘛(laughs)",
-      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
+      "role": "sweet_girl",
       "options": { "voiceSetting": { "emotion": "happy", "speed": 0.93 } }
     },
     {
@@ -117,8 +117,8 @@
     {
       "description": "案例五：多角色 — 甜妹反击",
       "text": "我黏他怎么了？他身上暖暖的，抱起来本来就很舒服。",
-      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
-      "options": { "voiceSetting": { "emotion": "happy", "speed": 0.92 } }
+      "role": "sweet_girl",
+      "options": { "voiceSetting": { "emotion": "happy" } }
     },
     {
       "description": "案例五：多角色 — 绅士无奈",
@@ -129,8 +129,8 @@
     {
       "description": "案例五：多角色 — 甜妹撒娇求投喂",
       "text": "那你喂我吃一口蛋糕好不好<#0.2#>就一小口(sighs)",
-      "voiceType": "Chinese (Mandarin)_Sweet_Lady",
-      "options": { "voiceSetting": { "emotion": "happy", "speed": 0.92 } }
+      "role": "sweet_girl",
+      "options": { "voiceSetting": { "emotion": "happy" } }
     },
     {
       "description": "案例五：多角色 — 傲娇宣示主权",

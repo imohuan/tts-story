@@ -184,7 +184,16 @@ async function processProject(
 
   const getCreator = (provider: AudioProviderType): BaseAudioCreator => {
     if (!creatorCache.has(provider)) {
-      creatorCache.set(provider, createAudioCreator(provider, mergedProviderConfig));
+      // 合并 file-level roleMap 到 provider config，确保 creator 内部 resolveRole 可见
+      const probe = createAudioCreator(provider, {});
+      const finalConfig = {
+        ...mergedProviderConfig,
+        roleMap: {
+          ...probe.getRoleMap(),
+          ...(fileConfig.roleMap ?? {}),
+        },
+      };
+      creatorCache.set(provider, createAudioCreator(provider, finalConfig));
     }
     return creatorCache.get(provider)!;
   };
@@ -214,7 +223,7 @@ async function processProject(
       };
       const resolved = resolveRole(item, roleMap);
       logger.info(
-        `[${stem}] [${index + 1}/${items.length}] ${resolved.nameZh} (${resolved.speaker}) [${effectiveProvider}]`,
+        `[${stem}] [${index + 1}/${items.length}] ${resolved.nameZh} (${resolved.options.speaker ?? "?"}) [${effectiveProvider}]`,
       );
 
       const audio = await creator.synthOne(item);

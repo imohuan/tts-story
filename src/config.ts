@@ -73,12 +73,12 @@ export type BatchConfig = {
 /** 默认角色名 */
 export const DEFAULT_ROLE = "narrator";
 
-/** 角色映射条目：每个角色对应一个中文名 + provider 专用的声音 ID */
+/** 角色映射条目：nameZh 是元数据，其余字段均为该角色的默认 provider 配置 */
 export type RoleEntry = {
   /** 角色中文名，用于日志和文件名 */
   nameZh: string;
-  /** provider 专用的声音 ID */
-  speaker: string;
+  /** 其余字段直接作为该角色的默认配置合并到 item */
+  [key: string]: unknown;
 };
 
 /**
@@ -94,8 +94,8 @@ export type ResolvedRole = {
   role: string;
   /** 角色中文名（如 旁白 / 男主） */
   nameZh: string;
-  /** provider 专用的声音 ID */
-  speaker: string;
+  /** 合并后的配置：roleEntry.defaults + voiceType 覆盖 + item.options（item 最高优先） */
+  options: Record<string, unknown>;
 };
 
 export type BatchItem = {
@@ -141,24 +141,31 @@ export type BatchFileInput =
     };
 
 /**
- * 通用角色解析：根据 roleMap 解析出 speaker ID 和中文名
- * 优先级：item.voiceType（直接指定）> roleMap[item.role] > roleMap[DEFAULT_ROLE]
+ * 通用角色解析：根据 roleMap 解析角色，合并配置。
+ * 合并优先级：roleEntry 配置 < voiceType 快捷覆盖 < item.options（最高优先）
  */
 export function resolveRole(item: BatchItem, roleMap: RoleMap): ResolvedRole {
-  if (item.voiceType?.trim()) {
-    return { role: "custom", nameZh: "自定义", speaker: item.voiceType.trim() };
-  }
   const role = item.role || DEFAULT_ROLE;
-  const entry = roleMap[role];
-  if (entry) return { role, nameZh: entry.nameZh, speaker: entry.speaker };
-  // 角色未在映射表中，回退到默认角色
-  const fallback = roleMap[DEFAULT_ROLE];
-  if (!fallback)
+  const entry = roleMap[role] ?? roleMap[DEFAULT_ROLE];
+  if (!entry)
     throw new Error(`roleMap 中缺少默认角色 "${DEFAULT_ROLE}" 的映射`);
+
+  // 摘出 nameZh，其余全部作为角色配置
+  const { nameZh, ...roleConfig } = entry;
+
+  // voiceType 作为 speaker 的快捷覆盖
+  const voiceOverride = item.voiceType?.trim()
+    ? { speaker: item.voiceType.trim() }
+    : {};
+
   return {
-    role: DEFAULT_ROLE,
-    nameZh: fallback.nameZh,
-    speaker: fallback.speaker,
+    role,
+    nameZh,
+    options: {
+      ...roleConfig,
+      ...voiceOverride,
+      ...item.options,
+    },
   };
 }
 

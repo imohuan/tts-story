@@ -92,7 +92,7 @@ export type VolcEngineWsConfig = {
   /**
    * 角色名 → (中文名, 火山引擎 speaker ID) 映射表
    * 内置默认：narrator(旁白) / male_lead(男主) / female_lead(女主)
-   * 用户可扩展自定义角色，如 "villain": { nameZh: "反派", speaker: "some_id" }
+   * 用户可扩展自定义角色，如 "villain": { nameZh: "反派", speaker: "some_id" } }
    */
   roleMap: RoleMap;
 };

@@ -26,13 +26,14 @@ export class MiniMaxHttpAudioCreator extends BaseAudioCreator {
 
   override async synthOne(item: BatchItem): Promise<Uint8Array> {
     const resolved = resolveRole(item, this.opts.roleMap);
-    const voiceId = resolved.speaker;
+    const options = resolved.options;
+    const voiceId = (options.speaker as string) || this.opts.voiceSetting.voiceId;
     const body = buildMiniMaxRequestBody(item.text, {
       ...this.opts,
-      ...item.options,
+      ...options,
       voiceSetting: {
         ...this.opts.voiceSetting,
-        ...(item.options?.voiceSetting ?? {}),
+        ...(options.voiceSetting as Record<string, unknown> ?? {}),
         voiceId,
       },
     });
@@ -91,7 +92,7 @@ export class MiniMaxHttpAudioCreator extends BaseAudioCreator {
     }
 
     logger.info(
-      `${resolved.nameZh} (${resolved.speaker}) 合成完成, ${buffer.length} bytes`,
+      `${resolved.nameZh} (${options.speaker}) 合成完成, ${buffer.length} bytes`,
     );
     return new Uint8Array(buffer);
   }
