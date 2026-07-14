@@ -18,7 +18,8 @@ export abstract class BaseAudioCreator {
 export type AudioProviderType =
   | "volcengine_ws"
   | "minimax_http"
-  | "edge_tts";
+  | "edge_tts"
+  | "voxcpm2_gradio";
 
 /**
  * 用户可配置的 provider 设置

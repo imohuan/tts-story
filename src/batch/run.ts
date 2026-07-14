@@ -17,6 +17,7 @@ import { resolveEffectiveProvider } from "../utils/provider-detect";
 import "../audio_create/volcengine-ws";
 import "../audio_create/minimax-http";
 import "../audio_create/edge-tts";
+import "../audio_create/voxcpm2-gradio";
 import { logger, configureLogger } from "../utils/logger";
 
 function runCmd(cmd: string, args: string[]): Promise<void> {

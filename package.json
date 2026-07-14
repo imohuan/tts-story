@@ -17,6 +17,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@gradio/client": "^2.3.1",
     "ws": "^8.20.1"
   }
 }
