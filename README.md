@@ -28,17 +28,30 @@ bun install
 ### 2. 配置 `.env`
 
 ```env
-TTS_PROVIDER=volcengine_ws
+# 必填：TTS 后端，支持 volcengine_ws / minimax_http / edge_tts / voxcpm2_gradio / auto
+# auto 会根据 JSON 内容自动判断 provider，支持混用
+TTS_PROVIDER=auto
 
-# 火山引擎
+# 火山引擎（豆包）
 VOLC_API_KEY=your_api_key
 
-# MiniMax
+# MiniMax（通过 newapi 中转平台获取 key）
 MINIMAX_API_KEY=your_minimax_api_key
 
-# VoxCPM2 Gradio 服务 （可以使用 https://cnb.cool/yichenyanyu/VoxCPM）
+# VoxCPM2 Gradio 服务（可使用 https://cnb.cool/yichenyanyu/VoxCPM）
 VOXCPM2_HOST=localhost:8808
+
+# 可选：输出编码 mp3 / wav
+TTS_ENCODING=mp3
+
+# 可选：并发数
+TTS_CONCURRENCY=5
+
+# 可选：FFmpeg 路径（Windows 示例: C:/xxx/ffmpeg.exe）
+TTS_FFMPEG_PATH=C:/xxx/ffmpeg.exe
 ```
+
+完整配置项参考 `.env.example`。
 
 ### 3. 运行
 
@@ -50,10 +63,17 @@ bun run dev
 
 扫描 `input/` 下所有 `.json` 文件，逐个合成并合并，输出到 `output/`。
 
-### 4. 查看角色音色
+### 4. 其他脚本
 
 ```bash
+# 导出各 provider 角色映射表
 bun run export:rolemaps
+
+# 构建中文音色预览
+bun run build:voice-preview-zh
+
+# TypeScript 类型检查
+bun run check
 ```
 
 ## 命令行参数
@@ -68,6 +88,8 @@ bun run export:rolemaps
 | `--output_file_name` | `TTS_OUTPUT_FILE_NAME` | `output` | 合并文件名 |
 | `--retry_count` | `TTS_RETRY_COUNT` | `2` | 单条最大重试次数 |
 | `--retry_delay_ms` | `TTS_RETRY_DELAY_MS` | `500` | 重试初始延迟(ms) |
+| `--retry_backoff_ms` | `TTS_RETRY_BACKOFF_MS` | `2` | 重试退避倍率(ms) |
+| `--retry_jitter_ms` | `TTS_RETRY_JITTER_MS` | `150` | 重试随机抖动(ms) |
 | `--task_delay_ms` | `TTS_TASK_DELAY_MS` | `0` | 相邻任务启动间隔 |
 | `--task_timeout_ms` | `TTS_TASK_TIMEOUT_MS` | `0` | 单任务超时，0=不限 |
 | `--stop_on_error` | `TTS_STOP_ON_ERROR` | `false` | 遇错即停 |
@@ -80,11 +102,13 @@ bun run export:rolemaps
 ├── input/                    # JSON 输入脚本
 ├── output/                   # 合成结果（git 忽略）
 ├── references_voices/        # VoxCPM2 参考音频
+├── scripts/                  # 辅助构建脚本
 ├── src/
 │   ├── main.ts               # 入口
 │   ├── config.ts             # 配置与类型
 │   ├── batch/run.ts          # 批处理编排
 │   ├── audio_create/         # 各 TTS 后端实现
+│   ├── tools/                # 工具脚本（角色映射导出等）
 │   └── utils/                # 并发、日志、自动检测
 ├── static/                   # HTML 辅助工具（音色预览、JSON 查看器）
 └── docs/                     # API 协议与参考文档
@@ -93,6 +117,7 @@ bun run export:rolemaps
 ## 辅助工具
 
 - `bun run export:rolemaps` — 导出各 provider 角色映射表
+- `bun run build:voice-preview-zh` — 构建中文音色预览数据
 - `bun run check` — TypeScript 类型检查
 - `static/voice-preview.html` — 浏览试听音色列表
 - `static/json-folder-viewer.html` — 可视化检查 JSON 对话脚本
